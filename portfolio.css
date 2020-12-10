@@ -1,0 +1,277 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-screen {
+    position: relative;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.illustration {
+    width: 60%;
+}
+
+.greeting {
+    width: fit-content;
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 20px;
+    font-style: normal;
+    color: #292929;
+}
+
+.display {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 110px;
+}
+
+.scroll-line {
+    position: absolute;
+    background-color: #ff5959;
+    height: 200px;
+    overflow: hidden;
+    width: 4px;
+}
+
+.scroll-line::before,
+.scroll-line::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+}
+
+.scroll-line:before {
+    background: #e0e0e0;
+}
+
+.scroll-line::after {
+    background: #ff5959;
+    animation: slider 2.5s ease-out infinite;
+}
+
+.icons {
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+@keyframes slider {
+    0% {
+        transform: translate3d(0, -200%, 0);
+    }
+    100% {
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.second-screen {
+    position: relative;
+}
+
+.second-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #ff5151;
+}
+
+.description {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    color: #292929;
+}
+
+.third-screen {
+    height: 100vh;
+    position: relative;
+}
+
+.contact-card {
+    position: absolute;
+    border-radius: 8px;
+    height: 450px;
+    width: 300px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 8rem 10rem;
+    background-image: url("assets/profile-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px -10px black;
+    overflow: hidden;
+}
+
+.card-blur {
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 1px);
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.contact-card:hover .card-blur {
+    opacity: 0.6;
+}
+
+.footer {
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+}
+
+svg#curve {
+    position: absolute;
+    fill: #ff7373;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: 450px;
+}
+
+.connections {
+    height: 80px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    margin: auto;
+}
+
+.connection {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 25px;
+    transform: translateY(200px);
+
+    transition: transform 1s cubic-bezier(0.46, 1.48, 0.18, 0.81);
+}
+
+.contact-card:hover .connection {
+    transform: translateY(0px);
+}
+
+.connection.mail {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.connection.twitter {
+    transition-delay: 0.02s;
+}
+
+.connection.github {
+    transition-delay: 0.04s;
+}
+
+.connection.mail .icon {
+    height: 15px;
+    width: 15px;
+    background-image: url(assets/mail\ 1.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.connection.twitter .icon {
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/Twitter.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.connection.github .icon {
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/Github.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.info {
+    font-family: Poppins;
+    letter-spacing: 0.1em;
+    color: azure;
+    padding-left: 20px;
+    transform: translateY(250px);
+
+    transition: transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02);
+}
+
+.contact-card:hover .info {
+    transform: translateY(0px);
+}
+
+.name {
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.job {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .illustration {
+        display: none;
+    }
+
+    .display {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .greeting {
+        font-size: 14px;
+        word-wrap: none;
+    }
+
+    .second-title {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .illustration {
+        display: none;
+    }
+}
