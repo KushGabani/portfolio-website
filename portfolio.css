@@ -1,277 +1,161 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .align-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.first-screen {
-    position: relative;
+.align-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.top-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.illustration {
-    width: 60%;
+.nav-bar {
+  padding: 1rem 5rem;
+  margin-bottom: 3rem;
 }
 
-.greeting {
-    width: fit-content;
-    padding-left: 0.5rem;
-    margin-bottom: 0;
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size: 20px;
-    font-style: normal;
-    color: #292929;
+.page-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #292929;
 }
 
-.display {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 110px;
-    line-height: 110px;
+.skill-set {
+  margin: 2rem 0;
 }
 
-.scroll-line {
-    position: absolute;
-    background-color: #ff5959;
-    height: 200px;
-    overflow: hidden;
-    width: 4px;
+.skills {
+  margin: 0.5rem;
 }
 
-.scroll-line::before,
-.scroll-line::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
+.skills > ul {
+  list-style: none;
 }
 
-.scroll-line:before {
-    background: #e0e0e0;
+.skills > ul > li {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  padding: 0 3rem;
+  color: #393939;
 }
 
-.scroll-line::after {
-    background: #ff5959;
-    animation: slider 2.5s ease-out infinite;
+.dot {
+  margin: 0 1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: #ff8787;
 }
 
-.icons {
-    margin: 0 0.5rem;
-    text-decoration: none;
+.project-card {
+  padding: 2rem 3rem;
+  height: fit-content;
+  text-align: right;
+  margin-right: 10rem;
+  width: 100%;
+  margin-left: 3rem;
 }
 
-@keyframes slider {
-    0% {
-        transform: translate3d(0, -200%, 0);
-    }
-    100% {
-        transform: translate3d(0, 100%, 0);
-    }
+.project-title {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
-.second-screen {
-    position: relative;
+.project-title-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: 0.15em;
+  color: #212121;
 }
 
-.second-title {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: 0.1em;
-    color: #ff5151;
+.project-tech {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  color: #292929;
 }
 
-.description {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 36px;
-    color: #292929;
+.project-description-text {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: #292929;
 }
 
-.third-screen {
-    height: 100vh;
-    position: relative;
+.btn {
+  margin: 3rem 0;
 }
 
-.contact-card {
-    position: absolute;
-    border-radius: 8px;
-    height: 450px;
-    width: 300px;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 8rem 10rem;
-    background-image: url("assets/profile-photo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 30px -10px black;
-    overflow: hidden;
+.more-btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
 }
 
-.card-blur {
-    position: absolute;
-    height: 100%;
-    width: calc(100% + 1px);
-    background-color: black;
-    opacity: 0;
-    transition: opacity 0.15s ease-in;
+.learn-more-white {
+  padding: 1rem 2rem;
+  border: 3px solid #393939;
+  width: fit-content;
 }
 
-.contact-card:hover .card-blur {
-    opacity: 0.6;
+.btn:hover .learn-more-white {
+  background-color: #393939;
+  color: white;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
 }
 
-.footer {
-    z-index: 1;
-    position: absolute;
-    height: 80px;
-    width: 100%;
-    bottom: 0;
+.project-card:hover {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
 }
 
-svg#curve {
-    position: absolute;
-    fill: #ff7373;
-    left: 0;
-    bottom: 0;
-    width: 400px;
-    height: 450px;
+.dark:hover {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3), -8px -8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-out;
 }
 
-.connections {
-    height: 80px;
-    width: 400px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 70px;
-    margin: auto;
+.learn-more-dark {
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  width: fit-content;
+  color: white;
 }
 
-.connection {
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
-    background-color: white;
-    display: inline-block;
-    padding: 5px;
-    margin-right: 25px;
-    transform: translateY(200px);
-
-    transition: transform 1s cubic-bezier(0.46, 1.48, 0.18, 0.81);
-}
-
-.contact-card:hover .connection {
-    transform: translateY(0px);
-}
-
-.connection.mail {
-    margin-left: 20px;
-    padding: 5px;
-}
-
-.connection.twitter {
-    transition-delay: 0.02s;
-}
-
-.connection.github {
-    transition-delay: 0.04s;
-}
-
-.connection.mail .icon {
-    height: 15px;
-    width: 15px;
-    background-image: url(assets/mail\ 1.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-.connection.twitter .icon {
-    height: 100%;
-    width: 100%;
-    background-image: url(assets/Twitter.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-.connection.github .icon {
-    height: 100%;
-    width: 100%;
-    background-image: url(assets/Github.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-.info {
-    font-family: Poppins;
-    letter-spacing: 0.1em;
-    color: azure;
-    padding-left: 20px;
-    transform: translateY(250px);
-
-    transition: transform 1s cubic-bezier(0.31, 1.21, 0.64, 1.02);
-}
-
-.contact-card:hover .info {
-    transform: translateY(0px);
-}
-
-.name {
-    font-weight: bolder;
-    padding-top: 5px;
-}
-
-.job {
-    margin-top: 10px;
-}
-
-@media screen and (max-width: 800px) {
-    .illustration {
-        display: none;
-    }
-
-    .display {
-        font-size: 70px;
-        line-height: 70px;
-    }
-
-    .greeting {
-        font-size: 14px;
-        word-wrap: none;
-    }
-
-    .second-title {
-        font-size: 18px;
-    }
-
-    .description {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 1200px) {
-    .illustration {
-        display: none;
-    }
+.btn-dark:hover .learn-more-dark {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-out;
 }
