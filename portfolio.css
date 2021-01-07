@@ -39,7 +39,7 @@ body {
 }
 
 .skill-set {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .skills {
@@ -68,13 +68,26 @@ body {
   background-color: #ff8787;
 }
 
-.project-card {
+.project-card-light {
   padding: 2rem 3rem;
   height: fit-content;
   text-align: right;
   margin-right: 10rem;
-  width: 100%;
-  margin-left: 3rem;
+  width: 60rem;
+  margin-left: 10rem;
+}
+
+.project-card-dark {
+  padding: 2rem 3rem;
+  height: fit-content;
+  text-align: left;
+  margin-right: 10rem;
+  width: 60rem;
+  margin-right: 10rem;
+}
+
+.dark {
+  text-align: left;
 }
 
 .project-title {
@@ -87,7 +100,7 @@ body {
   font-style: normal;
   font-weight: 800;
   font-size: 35px;
-  line-height: 40px;
+  line-height: 35px;
   letter-spacing: 0.15em;
   color: #212121;
 }
@@ -98,6 +111,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.1em;
+  padding: 0 0.5rem;
   color: #292929;
 }
 
@@ -133,17 +147,17 @@ body {
 .btn:hover .learn-more-white {
   background-color: #393939;
   color: white;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
-.project-card:hover {
+.project-card-light:hover {
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out;
 }
 
-.dark:hover {
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3), -8px -8px 15px rgba(0, 0, 0, 0.3);
+.project-card-dark:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
+    -10px -10px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-out;
 }
 
@@ -154,8 +168,13 @@ body {
   color: white;
 }
 
+.btn-dark {
+  margin-top: 3rem;
+}
+
 .btn-dark:hover .learn-more-dark {
   background-color: white;
   color: black;
   transition: all 0.3s ease-out;
+  cursor: pointer;
 }
