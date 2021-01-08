@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&family=Abril+Fatface&display=swap" rel="stylesheet">
   </head>
   <body>
         <div class = "align-left nav-bar col" style="height: 10rem;">
@@ -52,11 +52,14 @@
             <hr style="background-color: lightgray; width: 70%;"/>
         </div>
         <div class = "projects">
-            <div class = "container-fluid align-center" style="height: 50rem">
-                <div class="align-center" style="height: 95%; margin-left   : 10rem;">
+            <div class = "container-fluid align-sides" style="height: 50rem">
+                <div class="align-center" style="height: 95%; margin-left: 15rem;">
                     <img src = "assets/P1.png" height="100%" />
                 </div>
                 <div class = "project-card-light">
+                    <div style="position: absolute; top: -15rem; left: 18rem;" >
+                        <span class = "serial-light">1</span>
+                    </div>
                     <div>
                         <div class = "project-title">
                             <span class = "project-title-text">PROJECT ETHER</span>
@@ -77,7 +80,7 @@
                             disease with a relatively high accuracy.
                         </span>
                     </div>
-                    <div class="btn">
+                    <div class="btn"> 
                         <div class = "learn-more-white">
                             <span class = "more-btn">LEARN MORE</span>
                         </div>
@@ -85,8 +88,11 @@
                 </div>
             </div>
 
-            <div class = "container-fluid align-center p-0" style="height: 50rem; background-color: #1B1B1B;">
+            <div class = "container-fluid align-sides" style="height: 50rem; background-color: #1B1B1B;">
                 <div class = "project-card-dark">
+                    <div style="position: absolute; top: -15rem" >
+                        <span class = "serial-dark">2</span>
+                    </div>
                     <div>
                         <div class = "project-title">
                             <span class = "project-title-text" style="color: white;">SIMPSONS PARODY</span>
@@ -118,11 +124,14 @@
                 </div>
             </div>
 
-            <div class = "container-fluid align-center" style="height: 50rem">
-                <div class="align-center" style="height: 90%; margin-left : 10rem;">
+            <div class = "container-fluid align-sides" style="height: 50rem">
+                <div class="align-center" style="height: 90%; margin-left: 10rem;">
                     <img src = "assets/P3.png" height="100%" />
                 </div>
-                <div class = "project-card-light">
+                <div class = "project-card-light" style="margin-right: 0;">
+                    <div style="position: absolute; top: -18rem; left: 8rem;" >
+                        <span class = "serial-light">3</span>
+                    </div>
                     <div>
                         <div class = "project-title">
                             <span class = "project-title-text">THREE BEAN BARISTA</span>
@@ -149,8 +158,11 @@
                 </div>
             </div>
 
-            <div class = "container-fluid align-center p-0" style="height: 50rem; background-color: #1B1B1B;">
+            <div class = "container-fluid align-sides" style="height: 50rem; background-color: #1B1B1B;">
                 <div class = "project-card-dark">
+                    <div style="position: absolute; top: -15rem; left: 4rem;" >
+                        <span class = "serial-dark">4</span>
+                    </div>
                     <div>
                         <div class = "project-title">
                             <span class = "project-title-text" style="color: white;">GAME OF THRONES NETWORK ANALYSIS</span>
@@ -177,6 +189,91 @@
                 </div>
                 <div class="align-center" style="height: 100%; margin-right: 10rem; align-items: flex-end;">
                     <img src = "assets/P4.png" height="90%" />
+                </div>
+            </div>
+
+            <div class = "container-fluid align-sides" style="height: 50rem">
+                <div class="align-center" style="height: 90%; margin-left : 7rem;">
+                    <img src = "assets/P5.png" height="100%" />
+                </div>
+                <div class = "project-card-light">
+                    <div style="position: absolute; top: -15rem; left: 10rem;" >
+                        <span class = "serial-light">5</span>
+                    </div>
+                    <div>
+                        <div class = "project-title">
+                            <span class = "project-title-text">ORANGE DOT</span>
+                            <div class="align-right">  
+                                <span class = "project-tech">TWITTER API</span>
+                                <div class = "dot align-center"></div>
+                                <span class = "project-tech">NODE.JS</span>
+                                <div class = "dot align-center"></div>
+                                <span class = "project-tech">SOCKET.IO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class = "project-description-text">
+                            A web application to gather data from tweets according to your search queries.
+                            Simple and efficient to compile data for Natural Language Processing (NLP) purposes.
+                            All the gathered data then can be downloaded in a text file in json format.
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <div class = "learn-more-white">
+                            <span class = "more-btn">LEARN MORE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="align-center" style="padding-bottom: 5rem;">
+            <div class="extra-serials-orange align-center">
+                <span class = "sub-serial">6</span>
+                <div class = "hidden-projects align-center" style="flex-direction: column; color: black;">
+                    <span class = "minor-project-text">P5.js</span>
+                    <div class="align-center" style="flex-direction: column;">
+                        <a href = "https://github.com/KushGabani/Double-Pendulum-Visualization" class="sub-link" target="_blank">
+                            <p class="sub-project-text">Double Pendulum Visualisations</p>
+                        </a>
+                        <a href = "https://github.com/KushGabani/Flappy-Bird-p5.js" class="sub-link" target="_blank">
+                            <p class="sub-project-text">Flappy Bird</p>
+                        </a>
+                        <a href = "https://github.com/KushGabani/Snake-Game-p5.js" class="sub-link" target="_blank">
+                            <p class="sub-project-text">Snake Game</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-serials-orange align-center">
+                <span class = "sub-serial">7</span>
+                <div class = "hidden-projects align-center" style="flex-direction: column;">
+                    <span class = "minor-project-text">Machine Learning</span>
+                    <div class="align-center" style="flex-direction: column;">
+                        <a href = "https://github.com/KushGabani/Numeric-Digit-Classifier" class="sub-link" target="_blank">
+                            <p class="sub-project-text">Numeric Digit Classifier</p>
+                        </a>
+                        <a href = "https://github.com/KushGabani/Heart-Disease-With-Machine-Learning" class="sub-link" target="_blank">
+                            <p class="sub-project-text">Heart Disease Classifier</p>
+                        </a>
+                        <a href = "https://github.com/KushGabani/Predicting-Bulldozer-prices-using-Machine-Learning" class="sub-link target="_blank">
+                            <p class="sub-project-text">Bulldozer Price Prediction</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="extra-serials-orange align-center">
+                <span class = "sub-serial">8</span>
+                <div class = "hidden-projects align-center" style="flex-direction: column; color: black;">
+                    <span class = "minor-project-text">Python & React</span>
+                    <div class="align-center" style="flex-direction: column;">
+                        <a href = "https://github.com/KushGabani/EtherScraper" class="sub-link" target="_blank">
+                            <p class="sub-project-text">EtherScraper</p>
+                        </a>
+                        <a href = "https://github.com/KushGabani/Instagram-clone" class="sub-link" target="_blank">
+                            <p class="sub-project-text">Instagram Clone <i>(In Progress)</i></p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
