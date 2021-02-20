@@ -6,6 +6,14 @@
   cursor: none;
 }
 
+.page-wrapper {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  height: 100vh;
+  display: flex;
+}
+
 .alignCenter {
   display: flex;
   justify-content: center;

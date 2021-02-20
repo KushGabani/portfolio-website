@@ -1,5 +1,6 @@
 import React from "react";
-import Project from "./projects/project-page.js";
+// import Project from "./projects/project-page";
+import ContactPage from "./contact/contact-page";
 import Loader from "./loading-animation/loader";
 import "./global-css/basics.css";
 
@@ -8,7 +9,8 @@ class App extends React.Component {
     return (
       <div className="app-wrapper">
         <Loader />
-        <Project />
+        {/* <Project /> */}
+        <ContactPage />
       </div>
     );
   }
