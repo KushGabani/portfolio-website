@@ -21,8 +21,10 @@
   width: 18rem;
   height: 18rem;
   background-color: #fd5900;
+  border: 5px solid #fd5900;
   margin: 0 3rem;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 .hiddenProjects {
@@ -58,6 +60,7 @@
 .extraSerialsOrange:hover {
   background-color: white;
   border: 5px solid #fd5900;
+  transition: all 0.3s ease-in-out;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05),
     -10px -10px 30px rgba(0, 0, 0, 0.05);
 }

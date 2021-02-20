@@ -12,11 +12,11 @@ class PropImage extends React.Component {
   constructor(props) {
     super(props);
     this.image = "";
-    if (this.props.imgName == "P1.png") this.image = P1;
-    else if (this.props.imgName == "P2.png") this.image = P2;
-    else if (this.props.imgName == "P3.png") this.image = P3;
-    else if (this.props.imgName == "P4.png") this.image = P4;
-    else if (this.props.imgName == "P5.png") this.image = P5;
+    if (this.props.imgName === "P1.png") this.image = P1;
+    else if (this.props.imgName === "P2.png") this.image = P2;
+    else if (this.props.imgName === "P3.png") this.image = P3;
+    else if (this.props.imgName === "P4.png") this.image = P4;
+    else if (this.props.imgName === "P5.png") this.image = P5;
     else this.image = P6;
   }
   render() {
