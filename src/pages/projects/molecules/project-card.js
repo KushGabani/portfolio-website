@@ -3,7 +3,7 @@ import PropImage from "./../atoms/prop-image";
 import ProjectHeader from "./../atoms/project-header";
 import ProjectDescription from "./../atoms/project-description";
 import LearnMore from "./../atoms/learn-more";
-import "./../global-css/basics.css";
+import "./../../global-css/basics.css";
 import "./css/project-card.css";
 
 class ProjectCard extends React.Component {

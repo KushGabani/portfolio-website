@@ -1,5 +1,5 @@
 import React from "react";
-import "./../global-css/basics.css";
+import "./../../global-css/basics.css";
 import avi from "./../../../assets/Prop2.png";
 
 class Avatar extends React.Component {

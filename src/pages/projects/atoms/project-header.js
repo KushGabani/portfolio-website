@@ -1,6 +1,6 @@
-import React from "react"
-import "./css/card.css"
-import "./../global-css/basics.css"
+import React from "react";
+import "./css/card.css";
+import "./../../global-css/basics.css";
 
 class ProjectHeader extends React.Component {
   render() {
@@ -16,9 +16,9 @@ class ProjectHeader extends React.Component {
           display: "flex",
           justifyContent: "flex-start",
           alignItems: "center",
-        }
+        };
 
-    const [tech1, tech2, tech3] = this.props.tech
+    const [tech1, tech2, tech3] = this.props.tech;
     return (
       <div>
         <div className="projectTitle">
@@ -36,8 +36,8 @@ class ProjectHeader extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default ProjectHeader
+export default ProjectHeader;

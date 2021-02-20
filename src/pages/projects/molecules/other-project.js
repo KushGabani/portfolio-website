@@ -1,10 +1,10 @@
-import React from "react"
-import MinorProject from "./../atoms/minor-project"
-import "./../global-css/basics.css"
+import React from "react";
+import MinorProject from "./../atoms/minor-project";
+import "./../../global-css/basics.css";
 
 class OtherProject extends React.Component {
   render() {
-    const minorTitles = ["P5.js", "Machine Learning", "Python & React"]
+    const minorTitles = ["P5.js", "Machine Learning", "Python & React"];
     const projectNames = [
       ["Double Pendulum Visualization", "Flappy Bird", "Snake Game"],
       [
@@ -13,7 +13,7 @@ class OtherProject extends React.Component {
         "Bulldozer Price Prediction",
       ],
       ["Ether Scraper", "Instagram Clone (in progress)", ""],
-    ]
+    ];
     const projectLinks = [
       [
         "Double-Pendulum-Visualization",
@@ -26,9 +26,9 @@ class OtherProject extends React.Component {
         "Predicting-Bulldozer-prices-using-Machine-Learning",
       ],
       ["EtherScraper", "Instagram-clone"],
-    ]
+    ];
 
-    let allMinorProjects = []
+    let allMinorProjects = [];
     for (let i = 0; i < 3; i++) {
       allMinorProjects.push(
         <MinorProject
@@ -37,11 +37,11 @@ class OtherProject extends React.Component {
           projectNames={projectNames[i]}
           links={projectLinks[i]}
         />
-      )
+      );
     }
 
-    return <div className="alignCenter">{allMinorProjects}</div>
+    return <div className="alignCenter">{allMinorProjects}</div>;
   }
 }
 
-export default OtherProject
+export default OtherProject;

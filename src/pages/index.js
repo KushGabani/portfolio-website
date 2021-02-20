@@ -1,15 +1,13 @@
 import React from "react";
 import Project from "./projects/project-page.js";
-import "./projects/global-css/basics.css";
+import "./global-css/basics.css";
 
 class App extends React.Component {
   render() {
     return (
-      <html lang="en">
-        <body>
-          <Project />
-        </body>
-      </html>
+      <div className="app-wrapper">
+        <Project />
+      </div>
     );
   }
 }

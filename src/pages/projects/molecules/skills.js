@@ -1,8 +1,8 @@
-import React from "react"
-import Avatar from "./../atoms/avatar"
-import LanguageSet from "./language-set.js"
-import "./../global-css/basics.css"
-import "./css/skill-set.css"
+import React from "react";
+import Avatar from "./../atoms/avatar";
+import LanguageSet from "./language-set.js";
+import "./../../global-css/basics.css";
+import "./css/skill-set.css";
 
 class Skills extends React.Component {
   render() {
@@ -38,8 +38,8 @@ class Skills extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Skills
+export default Skills;

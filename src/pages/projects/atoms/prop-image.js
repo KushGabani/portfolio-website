@@ -1,5 +1,5 @@
 import React from "react";
-import "./../global-css/basics.css";
+import "./../../global-css/basics.css";
 import "./css/card.css";
 import P1 from "./../../../assets/P1.png";
 import P2 from "./../../../assets/P2.png";

@@ -1,6 +1,6 @@
-import React from "react"
-import "./css/nav.css"
-import "./../global-css/basics.css"
+import React from "react";
+import "./css/nav.css";
+import "./../../global-css/basics.css";
 
 class NavBar extends React.Component {
   render() {
@@ -13,8 +13,8 @@ class NavBar extends React.Component {
           <b>WORK</b>
         </p>
       </div>
-    )
+    );
   }
 }
 
-export default NavBar
+export default NavBar;

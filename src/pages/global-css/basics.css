@@ -1,10 +1,11 @@
-html,
-body {
+.app-wrapper {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  cursor: none;
 }
+
 .alignCenter {
   display: flex;
   justify-content: center;
