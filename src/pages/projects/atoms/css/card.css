@@ -1,0 +1,92 @@
+.img-light {
+  height: 90%;
+  margin-left: 8rem;
+  width: fit-content;
+}
+
+.img-dark {
+  height: 100%;
+  margin-right: 8rem;
+  align-items: flex-end;
+  width: fit-content;
+}
+
+.projectTitle {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projectTitleText {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 0.15em;
+}
+
+.projectTech {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  padding: 0 0.5rem;
+}
+
+.dot {
+  margin: 0 0.8rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fd5900;
+}
+
+.projectDescriptionText {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.btn {
+  margin: 2rem 0;
+}
+
+.moreBtn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+
+.learnMoreWhite {
+  padding: 0.7rem 1.5rem;
+  border: 3px solid #393939;
+  width: fit-content;
+}
+
+.btn:hover .learnMoreWhite {
+  background-color: #393939;
+  color: white;
+  cursor: pointer;
+}
+
+.btnDark {
+  margin-top: 3rem;
+}
+
+.learnMoreDark {
+  padding: 0.7rem 1.5rem;
+  border: 2px solid white;
+  width: fit-content;
+}
+
+.btnDark:hover .learnMoreDark {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-out;
+}

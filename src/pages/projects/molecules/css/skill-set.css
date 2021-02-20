@@ -1,0 +1,12 @@
+.skillContainer {
+  flex-direction: "column";
+  margin: 0;
+  padding: 0;
+}
+.skillSet {
+  margin-top: 3rem;
+}
+
+.skills {
+  margin: 0.3rem;
+}

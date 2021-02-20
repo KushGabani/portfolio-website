@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.alignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alignLeft {
+  display: "flex";
+  justify-content: "flex-start";
+  align-items: "center";
+}
+
+.alignRight {
+  display: "flex";
+  justify-content: "flex-start";
+  align-items: "center";
+}
+
+.dividerContainer {
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  margin: 3rem 0;
+}
+
+.divider {
+  background-color: "lightgray";
+  width: 70%;
+  opacity: 50%;
+}
