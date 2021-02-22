@@ -1,7 +1,6 @@
 import React from "react";
 import "./../../global-css/basics.css";
 import avi from "./../../../assets/Prop2.png";
-w;
 
 class Avatar extends React.Component {
   render() {

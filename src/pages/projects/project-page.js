@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./atoms/nav-bar";
+import MenuPage from "./../menu/menu-page";
 import Skills from "./molecules/skills";
 import ProjectCard from "./molecules/project-card";
 import OtherProject from "./molecules/other-project";
@@ -26,7 +26,7 @@ class Project extends React.Component {
       `A utility web application to predict a spectrum of critical diseases
     with well-trained Machine Learning models with just a click. Divided
     into 3 modules is this project, that classifies among a pool of
-    diseases f  rom Asthma to Parkinson's disease with a relatively high
+    diseases from Asthma to Parkinson's disease with a relatively high
     accuracy.`,
       `A deep learning project with the functionality to recognise 20 characters from an image using DCNNs, and generate dialogues for episodes as long as needed from given context with LSTMs. Along with these live demo(s) are Training phase visualizations, Analysis and model statistics.`,
       `A beginner's take client-side desktop application using C# for a cafe shop that serves coffee, tea and other snacks.`,
@@ -62,13 +62,8 @@ class Project extends React.Component {
     return (
       <div style={{ margin: "0", padding: "0", cursor: "none" }}>
         <Cursor />
-        <NavBar />
-
-        <Skills />
-
-        <div className="dividerContainer">
-          <hr className="divider" />
-        </div>
+        <MenuPage page="WORK" />
+        {/* <Skills /> */}
 
         {projectStrip}
 

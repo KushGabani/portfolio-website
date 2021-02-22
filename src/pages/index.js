@@ -9,8 +9,8 @@ class App extends React.Component {
     return (
       <div className="app-wrapper">
         <Loader />
-        {/* <Project /> */}
         <ContactPage />
+        {/* <Project /> */}
       </div>
     );
   }
