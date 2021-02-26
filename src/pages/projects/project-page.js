@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import ProjectCard from "./molecules/project-card";
 import { Cursor } from "./../custom-cursor/cursor";
+import Loader from "./../loading-animation/loader";
 import OtherMinorProject from "./molecules/other-minor-project";
 
 // CSS and Assets
@@ -13,6 +14,7 @@ const Project = () => {
   return (
     <>
       <Cursor />
+      <Loader />
       <div style={styles.projectPageContainer}>
         {projects.map((project) => (
           <ProjectCard
