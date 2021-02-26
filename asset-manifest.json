@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.ec9fe72a.chunk.css",
-    "main.js": "/portfolio-website/static/js/main.bc47b883.chunk.js",
-    "main.js.map": "/portfolio-website/static/js/main.bc47b883.chunk.js.map",
+    "main.css": "/portfolio-website/static/css/main.6e79fd97.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.aad67fcb.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.aad67fcb.chunk.js.map",
     "runtime-main.js": "/portfolio-website/static/js/runtime-main.46b74f9e.js",
     "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.46b74f9e.js.map",
-    "static/js/2.15715a77.chunk.js": "/portfolio-website/static/js/2.15715a77.chunk.js",
-    "static/js/2.15715a77.chunk.js.map": "/portfolio-website/static/js/2.15715a77.chunk.js.map",
+    "static/js/2.681a3237.chunk.js": "/portfolio-website/static/js/2.681a3237.chunk.js",
+    "static/js/2.681a3237.chunk.js.map": "/portfolio-website/static/js/2.681a3237.chunk.js.map",
     "index.html": "/portfolio-website/index.html",
-    "static/css/main.ec9fe72a.chunk.css.map": "/portfolio-website/static/css/main.ec9fe72a.chunk.css.map",
-    "static/js/2.15715a77.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.15715a77.chunk.js.LICENSE.txt",
+    "static/css/main.6e79fd97.chunk.css.map": "/portfolio-website/static/css/main.6e79fd97.chunk.css.map",
+    "static/js/2.681a3237.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.681a3237.chunk.js.LICENSE.txt",
     "static/media/P1.e6f663c2.png": "/portfolio-website/static/media/P1.e6f663c2.png",
     "static/media/P2.00eb7f28.png": "/portfolio-website/static/media/P2.00eb7f28.png",
     "static/media/P3.4a991a7a.png": "/portfolio-website/static/media/P3.4a991a7a.png",
     "static/media/P4.5ed1ea6c.png": "/portfolio-website/static/media/P4.5ed1ea6c.png",
-    "static/media/P5.bee23582.png": "/portfolio-website/static/media/P5.bee23582.png"
+    "static/media/P5.bee23582.png": "/portfolio-website/static/media/P5.bee23582.png",
+    "static/media/dots-grid.ddaa5731.gif": "/portfolio-website/static/media/dots-grid.ddaa5731.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.46b74f9e.js",
-    "static/js/2.15715a77.chunk.js",
-    "static/css/main.ec9fe72a.chunk.css",
-    "static/js/main.bc47b883.chunk.js"
+    "static/js/2.681a3237.chunk.js",
+    "static/css/main.6e79fd97.chunk.css",
+    "static/js/main.aad67fcb.chunk.js"
   ]
 }
