@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import ProjectCard from "./molecules/project-card";
 import { Cursor } from "./../custom-cursor/cursor";
+import OtherMinorProject from "./molecules/other-minor-project";
 
 // CSS and Assets
 import "./../global-css/basics.css";
@@ -22,6 +23,8 @@ const Project = () => {
             projectDesc={project.projectDescription}
           />
         ))}
+        <hr className="divider" />
+        <OtherMinorProject />
       </div>
     </>
   );
