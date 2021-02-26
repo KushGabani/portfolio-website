@@ -1,52 +1,52 @@
 import React from "react";
+
+//Components
 import PropImage from "./../atoms/prop-image";
 import ProjectHeader from "./../atoms/project-header";
 import ProjectDescription from "./../atoms/project-description";
 import LearnMore from "./../atoms/learn-more";
-import "./../../global-css/basics.css";
-import "./css/project-card.css";
 
-class ProjectCard extends React.Component {
-  render() {
-    const projectCard = this.props.isLight
-      ? "projectCardLight"
-      : "projectCardDark";
+// CSS & Assets
+import "./css/local.css";
 
-    const prCard = this.props.isLight ? "card-light" : "card-dark";
+const ProjectCard = ({
+  isLight,
+  imgName,
+  projectTitle,
+  projectTech,
+  projectDesc,
+}) => {
+  if (isLight) {
     return (
-      <div className={"container-fluid alignSides " + prCard}>
-        {this.props.isLight && (
-          <PropImage
-            isLight={this.props.isLight}
-            imgName={this.props.imgName}
-          />
-        )}
-
-        <div className={projectCard}>
+      <div className="strip-container light">
+        <PropImage imgName={imgName} />
+        <div className="info-card card-light" style={{ color: "#212121" }}>
           <ProjectHeader
-            isLight={this.props.isLight}
-            title={this.props.title}
-            tech={this.props.tech}
+            isLight={isLight}
+            projectTitle={projectTitle}
+            projectTech={projectTech}
           />
-          <ProjectDescription
-            isLight={this.props.isLight}
-            desc={this.props.desc}
-          />
-          <LearnMore
-            isLight={this.props.isLight}
-            imgName={this.props.imgName}
-          />
+          <ProjectDescription desc={projectDesc} />
+          <LearnMore isLight={isLight} />
         </div>
-
-        {!this.props.isLight && (
-          <PropImage
-            isLight={this.props.isLight}
-            imgName={this.props.imgName}
+      </div>
+    );
+  } else {
+    return (
+      <div className="strip-container dark">
+        <div className="info-card card-dark" style={{ color: "white" }}>
+          <ProjectHeader
+            isLight={isLight}
+            projectTitle={projectTitle}
+            projectTech={projectTech}
           />
-        )}
+          <ProjectDescription desc={projectDesc} />
+          <LearnMore isLight={isLight} />
+        </div>
+        <PropImage imgName={imgName} />
       </div>
     );
   }
-}
+};
 
 export default ProjectCard;

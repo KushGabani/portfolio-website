@@ -1,17 +1,9 @@
-import React from "react"
-import "./css/card.css"
+import React from "react";
 
-class ProjectDescription extends React.Component {
-  render() {
-    const validAlign = this.props.isLight
-      ? { textAlign: "right" }
-      : { textAlign: "left" }
-    return (
-      <div style={validAlign}>
-        <span className="projectDescriptionText">{this.props.desc}</span>
-      </div>
-    )
-  }
-}
+// CSS and Assets
+import "./css/local.css";
+const ProjectDescription = ({ desc }) => {
+  return <p className="project-description">{desc}</p>;
+};
 
-export default ProjectDescription
+export default ProjectDescription;

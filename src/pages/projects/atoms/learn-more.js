@@ -1,23 +1,26 @@
 import React from "react";
-import "./css/card.css";
 
-class LearnMore extends React.Component {
-  render() {
-    const validBtn = this.props.isLight ? "btn" : "btnDark";
-    const validLearnMore = this.props.isLight
-      ? "learnMoreWhite"
-      : "learnMoreDark";
+// CSS and Assets
+import "./css/local.css";
 
+const LearnMore = ({ isLight }) => {
+  if (isLight) {
     return (
-      <div className={validBtn}>
-        <a href="#" style={{ textDecoration: "none", color: "inherit" }}>
-          <div className={validLearnMore}>
-            <span className="moreBtn">LEARN MORE</span>
-          </div>
-        </a>
-      </div>
+      <a>
+        <div className="btn-strip lm-light">
+          <div className="btn-container btn-light">LEARN MORE</div>
+        </div>
+      </a>
+    );
+  } else {
+    return (
+      <a>
+        <div className="btn-strip lm-dark">
+          <div className="btn-container btn-dark">LEARN MORE</div>
+        </div>
+      </a>
     );
   }
-}
+};
 
 export default LearnMore;
