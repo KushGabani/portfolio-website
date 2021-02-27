@@ -11,20 +11,28 @@ import Loader from "./pages/loading-animation/loader";
 import "./pages/global-css/basics.css";
 
 ReactDOM.render(
-  <Router>
+  <>
     <Cursor />
     <Loader />
-    <Switch>
-      <Route exact path="/">
-        <Project />
-      </Route>
-      <Route exact path="/portfolio-website">
-        <Project />
-      </Route>
-      <Route exact path="/portfolio-website/contact">
-        <Contact />
-      </Route>
-    </Switch>
-  </Router>,
+    <Contact />
+  </>,
   document.getElementById("root")
 );
+// ReactDOM.render(
+//   <Router>
+//     <Cursor />
+//     <Loader />
+//     <Switch>
+//       <Route exact path="/">
+//         <Project />
+//       </Route>
+//       <Route exact path="/portfolio-website">
+//         <Project />
+//       </Route>
+//       <Route exact path="/portfolio-website/contact">
+//         <Contact />
+//       </Route>
+//     </Switch>
+//   </Router>,
+//   document.getElementById("root")
+// );
