@@ -11,7 +11,6 @@ import "./../../global-css/basics.css";
 import HandProp from "./../../../assets/menu-prop.png";
 
 const FullNav = () => {
-  let { path, url } = useRouteMatch();
   return (
     <div className="main-menu-container">
       <div className="left-sub-container">
