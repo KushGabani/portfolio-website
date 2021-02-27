@@ -1,20 +1,21 @@
 import React from "react";
-import HamMenu from "./../atoms/ham-menu";
-import "./css/local.css";
 
-class ClosedNav extends React.Component {
-  render() {
-    return (
-      <div className="strip-container">
-        <div className="nav-wrapper">
-          <a>
-            <HamMenu />
-          </a>
-          <div className="page-title">{this.props.page}</div>
-        </div>
-      </div>
-    );
-  }
-}
+// Components
+import HamMenu from "./../atoms/ham-menu";
+
+// CSS and Assets
+import "./css/local.css";
+import "./../../global-css/basics.css";
+
+const ClosedNav = ({ page }) => {
+  return (
+    <div className="strip-container alignCenter">
+      <a>
+        <HamMenu page={page} />
+      </a>
+      <span className="nav-title">{page}</span>
+    </div>
+  );
+};
 
 export default ClosedNav;

@@ -15,6 +15,7 @@ const OtherMinorProject = () => {
         {minorProjectData.map((project) => {
           return (
             <MinorSquare
+              key={project.id}
               serial={project.id}
               minorTitle={project.minorTitle}
               projectNames={project.names}

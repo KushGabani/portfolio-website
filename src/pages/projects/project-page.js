@@ -2,8 +2,7 @@ import React from "react";
 
 // Components
 import ProjectCard from "./molecules/project-card";
-import { Cursor } from "./../custom-cursor/cursor";
-import Loader from "./../loading-animation/loader";
+import Menu from "./../menu/menu-page";
 import OtherMinorProject from "./molecules/other-minor-project";
 
 // CSS and Assets
@@ -12,12 +11,13 @@ import { projects } from "./project-data";
 
 const Project = () => {
   return (
-    <>
-      <Cursor />
-      <Loader />
+    <div className="app-wrapper alignCenter">
       <div style={styles.projectPageContainer}>
+        <Menu page="WORK" />
+        <div style={{ height: "6rem" }} />
         {projects.map((project) => (
           <ProjectCard
+            key={project.id}
             isLight={project.id % 2 !== 0 ? true : false}
             imgName={`P${project.id}.png`}
             projectTitle={project.projectTitle}
@@ -28,7 +28,7 @@ const Project = () => {
         <hr className="divider" />
         <OtherMinorProject />
       </div>
-    </>
+    </div>
   );
 };
 
@@ -38,6 +38,7 @@ const styles = {
   projectPageContainer: {
     width: "100%",
     height: "100%",
+    position: "relative",
     maxWidth: "1600px",
   },
 };

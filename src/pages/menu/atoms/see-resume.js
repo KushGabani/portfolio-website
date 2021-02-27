@@ -1,15 +1,11 @@
 import React from "react";
+
+// CSS and Assets
 import "./css/local.css";
 import "./../../global-css/basics.css";
 
-class SeeResume extends React.Component {
-  render() {
-    return (
-      <div className="resume-container alignCenter">
-        <p className="resume-text">See Resume</p>
-      </div>
-    );
-  }
-}
+const SeeResume = () => {
+  return <div className="resume-container alignCenter">See Resume</div>;
+};
 
 export default SeeResume;

@@ -1,16 +1,16 @@
 import React from "react";
+
+// Components
 import ClosedNav from "./molecules/closed-nav.js";
 import FullNav from "./molecules/full-nav.js";
 
-class MenuPage extends React.Component {
-  render() {
-    return (
-      <div>
-        <ClosedNav page={this.props.page} />
-        <FullNav />
-      </div>
-    );
-  }
-}
+const Menu = ({ page }) => {
+  return (
+    <div>
+      <ClosedNav page={page} />
+      <FullNav />
+    </div>
+  );
+};
 
-export default MenuPage;
+export default Menu;

@@ -1,4 +1,4 @@
-.strip-container {
+.project-strip-container {
   padding: 0 6rem;
   display: flex;
   align-items: center;
@@ -51,6 +51,7 @@
 }
 
 .otherProjectContainer {
+  background-color: white;
   flex-direction: column;
   margin-bottom: 1em;
 }
@@ -79,7 +80,7 @@
 
 /* For Tablets */
 @media only screen and (max-width: 900px) {
-  .strip-container {
+  .project-strip-container {
     padding: 0 0.5rem;
   }
   .info-card {

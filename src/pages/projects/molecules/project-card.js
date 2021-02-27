@@ -18,7 +18,7 @@ const ProjectCard = ({
 }) => {
   if (isLight) {
     return (
-      <div className="strip-container light">
+      <div className="project-strip-container light">
         <PropImage imgName={imgName} />
         <div className="info-card card-light" style={{ color: "#212121" }}>
           <ProjectHeader
@@ -33,7 +33,7 @@ const ProjectCard = ({
     );
   } else {
     return (
-      <div className="strip-container dark">
+      <div className="project-strip-container dark">
         <div className="info-card card-dark" style={{ color: "white" }}>
           <ProjectHeader
             isLight={isLight}
