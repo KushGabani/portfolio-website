@@ -87,7 +87,7 @@ hr {
 .form-wrapper {
   padding: 1em;
   position: relative;
-  width: 60%;
+  width: 70%;
 }
 
 .input-wrapper {
@@ -171,7 +171,7 @@ hr {
     font-size: 1.5rem;
   }
   .form-wrapper {
-    width: 70%;
+    width: 80%;
   }
   .indicator {
     width: 1.5em;
@@ -182,6 +182,7 @@ hr {
   .messageInput,
   .reach-me-btn {
     font-size: 2rem;
+    margin: 0.8em 0;
   }
 }
 

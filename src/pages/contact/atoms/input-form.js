@@ -21,7 +21,7 @@ const InputForm = () => {
           }}
         />
         <textarea
-          rows="10"
+          rows="8"
           placeholder={"Hello Kush,\n\n\nRegards,"}
           id="message"
           class="messageInput"
