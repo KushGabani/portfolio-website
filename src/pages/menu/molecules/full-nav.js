@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link, useRouteMatch } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
 // Components
 import SocialMedia from "./../../contact/atoms/social-media";
@@ -27,16 +27,16 @@ const FullNav = () => {
       <div className="right-sub-container">
         <div className="right-bar-content alignCenter">
           <div className="branch home">Home</div>
-          {/* <Link to="/portfolio-website" style={{ textDecoration: "none" }}> */}
-          <div className="branch work">Work</div>
-          {/* </Link> */}
+          <Link to="/portfolio-website" style={{ textDecoration: "none" }}>
+            <div className="branch work">Work</div>
+          </Link>
           <div className="branch about">About</div>
-          {/* <Link
+          <Link
             to="/portfolio-website/contact"
             style={{ textDecoration: "none" }}
-          > */}
-          <div className="branch contact">Contact</div>
-          {/* </Link> */}
+          >
+            <div className="branch contact">Contact</div>
+          </Link>
         </div>
       </div>
     </div>

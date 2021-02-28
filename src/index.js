@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Components
 import Project from "./pages/projects/project-page";
@@ -11,28 +11,20 @@ import Loader from "./pages/loading-animation/loader";
 import "./pages/global-css/basics.css";
 
 ReactDOM.render(
-  <>
+  <Router basename={process.env.PUBLIC_URL}>
     <Cursor />
     <Loader />
-    <Contact />
-  </>,
+    <Switch>
+      <Route exact path="/">
+        <Project />
+      </Route>
+      <Route exact path="/portfolio-website">
+        <Project />
+      </Route>
+      <Route exact path="/portfolio-website/contact">
+        <Contact />
+      </Route>
+    </Switch>
+  </Router>,
   document.getElementById("root")
 );
-// ReactDOM.render(
-//   <Router>
-//     <Cursor />
-//     <Loader />
-//     <Switch>
-//       <Route exact path="/">
-//         <Project />
-//       </Route>
-//       <Route exact path="/portfolio-website">
-//         <Project />
-//       </Route>
-//       <Route exact path="/portfolio-website/contact">
-//         <Contact />
-//       </Route>
-//     </Switch>
-//   </Router>,
-//   document.getElementById("root")
-// );
