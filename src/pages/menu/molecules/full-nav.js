@@ -27,14 +27,11 @@ const FullNav = () => {
       <div className="right-sub-container">
         <div className="right-bar-content alignCenter">
           <div className="branch home">Home</div>
-          <Link to="/portfolio-website" style={{ textDecoration: "none" }}>
+          <Link to="/work" style={{ textDecoration: "none" }}>
             <div className="branch work">Work</div>
           </Link>
           <div className="branch about">About</div>
-          <Link
-            to="/portfolio-website/contact"
-            style={{ textDecoration: "none" }}
-          >
+          <Link to="/contact" style={{ textDecoration: "none" }}>
             <div className="branch contact">Contact</div>
           </Link>
         </div>

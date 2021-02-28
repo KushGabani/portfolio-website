@@ -17,10 +17,10 @@ ReactDOM.render(
       <Route exact path="/">
         <Project />
       </Route>
-      <Route exact path="/portfolio-website">
+      <Route exact path="/work">
         <Project />
       </Route>
-      <Route exact path="/portfolio-website/contact">
+      <Route exact path="/contact">
         <Contact />
       </Route>
     </Switch>
