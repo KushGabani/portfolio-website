@@ -4,6 +4,7 @@ import React from "react";
 import ProjectCard from "./molecules/project-card";
 import Menu from "./../menu/menu-page";
 import OtherMinorProject from "./molecules/other-minor-project";
+import Loader from "./../loading-animation/loader";
 
 // CSS and Assets
 import "./../global-css/basics.css";
@@ -13,6 +14,7 @@ const Project = () => {
   return (
     <div className="app-wrapper alignCenter">
       <div style={styles.projectPageContainer}>
+        <Loader />
         <Menu page="WORK" />
         <div style={{ height: "6rem" }} />
         {projects.map((project) => (
