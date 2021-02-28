@@ -4,13 +4,11 @@ import React from "react";
 import Menu from "./../menu/menu-page";
 import FindMeProp from "./atoms/find-me-prop";
 import ContactContainer from "./molecules/contact-container";
-import Loader from "./../loading-animation/loader";
 
 const ContactPage = () => {
   return (
     <div className="app-wrapper alignCenter">
       <div style={styles.ContactPageContainer}>
-        <Loader />
         <Menu page="CONTACT" />
         <FindMeProp />
         <ContactContainer />
