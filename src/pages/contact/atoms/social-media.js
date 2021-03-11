@@ -7,7 +7,6 @@ import Github from "./../../../assets/icons/Github.svg";
 import LinkedIn from "./../../../assets/icons/linkedin.svg";
 import Pinterest from "./../../../assets/icons/Pinterest.svg";
 import Medium from "./../../../assets/icons/Medium.svg";
-import Twitter from "./../../../assets/icons/Twitter.svg";
 
 const SocialMedia = () => {
   const smLinks = [
@@ -26,10 +25,6 @@ const SocialMedia = () => {
     {
       platform: Medium,
       link: "https://medium.com/@kushgabz2687/",
-    },
-    {
-      platform: Twitter,
-      link: "https://twitter.com/KaaaafiFilmy",
     },
   ];
   return (
