@@ -1,12 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { colors } from "../colors";
+import { colors } from "../Colors";
 import "@fontsource/nothing-you-could-do";
 
 import GlobalStyle from "../GlobalStyle";
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
+import AnimatedCursor from "react-animated-cursor";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
 const IndexPage = () => (
   <React.Fragment>
     <GlobalStyle />
+    <AnimatedCursor innerSize={8} outerSize={15} color="253, 89, 0" />
     <Wrapper>
       <NavBar />
       <HeroSection />

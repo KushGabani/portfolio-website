@@ -1,6 +1,6 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
-import {colors} from "./colors";
+import {colors} from "./Colors";
 
 import "./typography.css";
 
@@ -19,11 +19,11 @@ const Style = createGlobalStyle`
   }
 
   ::-moz-selection {
-    background-color: rgba(253, 89, 0, 0.5);
+    background-color: rgba(253, 89, 0, 0.6);
   }
 
   ::selection {
-    background-color: rgba(253, 89, 0, 0.5);
+    background-color: rgba(253, 89, 0, 0.6);
   }
 `;
 
