@@ -1,0 +1,258 @@
+.left-side-container {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.mapImage {
+  width: 100%;
+  height: 100%;
+}
+
+.mapButton {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  width: fit-content;
+  padding: 1em 1.5em;
+  background-color: #1b1b1b;
+  color: white;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2), 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.innerText {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding-right: 0.7em;
+}
+
+.location {
+  width: 5%;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.primary-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+hr {
+  width: 100%;
+  background-color: lightgray;
+  opacity: 0.3;
+}
+
+.mobile {
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  margin-bottom: -0.2rem;
+  color: #343434;
+}
+
+.email {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  margin-top: -0.2rem;
+  color: #343434;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-icon {
+  margin: 0 1em;
+  width: 40%;
+}
+
+.form-wrapper {
+  padding: 1em;
+  position: relative;
+  width: 70%;
+}
+
+.input-wrapper {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.indicator {
+  width: 1em;
+  height: 1em;
+  background-color: #fd5900;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.7%;
+  top: 15%;
+  transition: top 0.3s ease-in;
+}
+
+.nameInput {
+  color: #343434;
+  border: 1.5px solid #343434;
+  background-color: white;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  transition: all 0.3s ease;
+}
+
+.messageInput {
+  border: 1.5px solid #343434;
+  color: #343434;
+  background-color: white;
+  width: 100%;
+  padding: 0.8rem 1.1rem;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.reach-me-btn {
+  border: 1.5px solid #343434;
+  color: #343434;
+  width: fit-content;
+  font-family: Montserrat;
+  font-weight: 500;
+  padding: 0.5em 1.5em;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.reach-me-btn:hover {
+  transition: all 0.3s ease;
+  background-color: #343434;
+  color: white;
+  cursor: none;
+}
+
+/* ========= Media Query ========== */
+
+/* Large 4K Monitors */
+@media only screen and (min-width: 1600px) {
+  .innerText {
+    font-size: 2rem;
+  }
+  .mapButton {
+    width: 60%;
+    padding: 1.5em;
+  }
+  .sm-icon {
+    width: 50%;
+    margin: 0 1.5em;
+  }
+  .mobile,
+  .email {
+    font-size: 1.5rem;
+  }
+  .form-wrapper {
+    width: 80%;
+  }
+  .indicator {
+    width: 1.5em;
+    height: 1.5em;
+    top: 13%;
+  }
+  .nameInput,
+  .messageInput,
+  .reach-me-btn {
+    font-size: 2rem;
+    margin: 0.8em 0;
+  }
+}
+
+/* HD Screens */
+@media only screen and (max-width: 1200px) {
+  .innerText {
+    font-size: 1.2rem;
+  }
+  .location {
+    width: 6%;
+  }
+  .mobile,
+  .email {
+    font-size: 0.8rem;
+  }
+  .form-wrapper {
+    width: 80%;
+  }
+  .nameInput,
+  .messageInput,
+  .reach-me-btn {
+    font-size: 1rem;
+  }
+}
+
+/* For Tablets */
+@media only screen and (max-width: 900px) {
+  .left-side-container {
+    display: none;
+  }
+  .mobile,
+  .email {
+    font-size: 1rem;
+  }
+  .nameInput,
+  .messageInput,
+  .reach-me-btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+  .sm-icon {
+    width: 35%;
+    margin: 0 1em;
+  }
+  .social-media {
+    margin-top: 2em;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .primary-details {
+    align-items: center;
+  }
+  .mobile,
+  .email {
+    font-size: 0.8rem;
+  }
+  .form-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .nameInput,
+  .messageInput,
+  .reach-me-btn {
+    font-size: 1rem;
+  }
+  .indicator {
+    display: none;
+  }
+}

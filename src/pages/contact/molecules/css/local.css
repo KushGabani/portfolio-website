@@ -1,0 +1,55 @@
+.right-side-container {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.7em 0;
+}
+
+.heading {
+  font-family: Abril Fatface;
+  font-size: 6rem;
+  color: #343434;
+}
+
+/* ========= Media Query ========== */
+
+/* Large 4K Monitors */
+@media only screen and (min-width: 1600px) {
+  .heading {
+    font-size: 9rem;
+  }
+  .right-side-container {
+    padding: 5.5em;
+  }
+}
+
+/* HD Screens */
+@media only screen and (max-width: 1200px) {
+  .right-side-container {
+    padding: 2.4em 0;
+  }
+}
+
+/* For Tablets */
+@media only screen and (max-width: 900px) {
+  .right-side-container {
+    width: 100%;
+  }
+  .heading {
+    font-size: 5rem;
+  }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+  .heading {
+    font-size: 2.7rem;
+  }
+  .right-side-container {
+    padding-top: 6em;
+  }
+}

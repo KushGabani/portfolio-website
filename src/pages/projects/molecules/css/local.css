@@ -1,0 +1,114 @@
+.project-strip-container {
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.light {
+  text-align: right;
+  background-color: white;
+  color: #1b1b1b;
+}
+
+.dark {
+  text-align: left;
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.info-card {
+  padding: 1em;
+  width: 50%;
+  margin: 1.7em 0;
+  transition: all 0.3s ease-out;
+}
+
+.card-light:hover {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.08),
+    -8px -8px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-out;
+}
+
+.card-dark:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4),
+    -10px -10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-out;
+}
+
+.temp {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+}
+
+.divider {
+  width: 80%;
+  background-color: lightgray;
+  opacity: 0.2;
+}
+
+.otherProjectContainer {
+  background-color: white;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.opHeading {
+  font-family: Caveat;
+  font-size: 3rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.minorProject {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+}
+
+/* ========= Media Query ========== */
+
+/* Large 4K Monitors */
+@media only screen and (min-width: 1600px) {
+  .opHeading {
+    font-size: 4rem;
+  }
+}
+
+/* For Tablets */
+@media only screen and (max-width: 900px) {
+  .project-strip-container {
+    padding: 0 0.5rem;
+  }
+  .info-card {
+    width: 70%;
+    margin: 1.5em 0;
+  }
+  .opHeading {
+    font-size: 2.2rem;
+  }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+  .info-card {
+    width: 100%;
+    margin: 1.2em 0;
+    text-align: left;
+  }
+  .opHeading {
+    font-size: 1.5rem;
+  }
+  .minorProject {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-device-width: 650px) and (orientation: landscape) {
+  .minorProject {
+    flex-direction: column;
+  }
+}

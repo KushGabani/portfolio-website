@@ -1,0 +1,128 @@
+.menu-icon {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  cursor: none;
+  margin-right: 1em;
+  background-color: transparent;
+}
+
+.menu-icon .menu-icon__checkbox {
+  display: block;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: none;
+  -webkit-touch-callout: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.menu-icon div {
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 1.5rem;
+  height: 0.8rem;
+}
+
+.menu-icon span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #212529;
+  border-radius: 1px;
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+
+.menu-icon span:first-of-type {
+  top: 0;
+}
+.menu-icon span:last-of-type {
+  bottom: 0;
+}
+
+.menu-icon.active span:first-of-type,
+.menu-icon .menu-icon__checkbox:checked + div span:first-of-type {
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+  transform: rotate(45deg);
+  background-color: black;
+  top: 5px;
+}
+.menu-icon.active span:last-of-type,
+.menu-icon .menu-icon__checkbox:checked + div span:last-of-type {
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+  transform: rotate(-45deg);
+  background-color: black;
+  bottom: 5px;
+}
+
+.resume-container {
+  margin: 1.5em 0;
+  padding: 0.5em 0;
+  padding-bottom: 0.6em;
+  width: 90%;
+  background: #ffffff;
+  border: 2px solid #343434;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+
+.resume-container:hover {
+  transition: all 0.3s ease-in;
+  color: white;
+  background: #fd5900;
+  border: 2px solid #fd5900;
+  box-sizing: border-box;
+  cursor: none;
+  box-shadow: 5px 5px 20px rgba(253, 89, 0, 0.2),
+    5px 5px 20px rgba(253, 89, 0, 0.2);
+}
+
+/* ========= Media Query ========== */
+
+/* Large 4K Monitors */
+@media only screen and (min-width: 1600px) {
+  .menu-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .menu-icon div {
+    width: 2.2rem;
+    height: 1rem;
+  }
+  .resume-container {
+    font-size: 2.2rem;
+    margin-top: 1em;
+  }
+}
+
+/* HD Screens */
+@media only screen and (max-width: 1200px) {
+}
+
+/* For Tablets */
+@media only screen and (max-width: 900px) {
+  .menu-icon {
+    margin: 0;
+  }
+  .resume-container {
+    font-size: 1.3rem;
+  }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+}

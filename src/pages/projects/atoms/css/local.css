@@ -1,0 +1,283 @@
+.prop-image {
+  width: 35%;
+  height: auto;
+  padding: 0 1rem;
+}
+
+.project-title {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+  min-width: fit-content;
+}
+
+.tech-stack {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.ts-light {
+  justify-content: flex-end;
+}
+
+.ts-dark {
+  justify-content: flex-start;
+}
+
+.dot {
+  margin: 0 1em;
+  padding: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fd5900;
+}
+
+.project-description {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  margin: 1.2em 0;
+}
+
+.btn-strip {
+  display: flex;
+}
+
+.btn-container {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  padding: 0.6em 1em;
+  transition: all 0.3s ease;
+}
+
+.lm-light {
+  justify-content: flex-end;
+}
+
+.lm-dark {
+  justify-content: flex-start;
+}
+
+.btn-light {
+  border: 2px solid #141414;
+}
+
+.btn-light:hover {
+  transition: all 0.3s ease;
+  background-color: #141414;
+  color: white;
+}
+
+.btn-dark {
+  border: 2px solid white;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-out;
+}
+
+.squareContainer {
+  width: 17em;
+  height: 17em;
+  margin: 0 1.5rem;
+  background-color: #fd5900;
+  position: relative;
+  margin: 2em;
+}
+
+.subSerial {
+  font-family: Abril Fatface;
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.hiddenContainer {
+  position: absolute;
+  border: 4px solid #fd5900;
+  z-index: -1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  flex-direction: column;
+  color: #1f1f1f;
+  transition: all 0.3s ease;
+}
+
+.squareContainer:hover .hiddenContainer {
+  transition: all 0.3s ease;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05),
+    -10px -10px 30px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  opacity: 1;
+}
+
+.minorProjectCategory {
+  font-family: Work Sans;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.subLink {
+  text-decoration: underline;
+  color: #303030;
+  margin-bottom: 0.7em;
+}
+
+.subProjectText {
+  font-family: Work Sans;
+  color: #303030;
+  font-size: 1.1rem;
+}
+
+/* ============= Media Query =========== */
+
+/* Large 4K Displays */
+@media only screen and (min-width: 1600px) {
+  .project-title {
+    font-size: 2.2rem;
+  }
+  .tech-stack {
+    font-size: 1.2rem;
+  }
+  .project-description {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .btn-container {
+    font-size: 1.2rem;
+  }
+  .squareContainer {
+    width: 20rem;
+    height: 20rem;
+  }
+  .subSerial {
+    font-size: 14rem;
+  }
+  .minorProjectCategory {
+    font-size: 3.3rem;
+  }
+  .subProjectText {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .squareContainer {
+    width: 15rem;
+    height: 15rem;
+  }
+  .subSerial {
+    font-size: 10rem;
+  }
+  .minorProjectCategory {
+    font-size: 2rem;
+  }
+}
+
+/* For Tablets */
+@media only screen and (max-width: 900px) {
+  .project-tech {
+    font-size: 0.5rem;
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
+  .tech-stack {
+    font-size: 0.7rem;
+  }
+  .project-description {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .btn-container {
+    font-size: 0.8rem;
+  }
+  .squareContainer {
+    width: 12rem;
+    height: 12rem;
+  }
+  .subSerial {
+    font-size: 8rem;
+  }
+  .minorProjectCategory {
+    font-size: 1.7rem;
+  }
+  .subProjectText {
+    font-size: 0.9rem;
+  }
+}
+
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+  .project-title {
+    font-size: 1rem;
+  }
+  .tech-stack {
+    font-size: 0.6rem;
+    justify-content: flex-start;
+  }
+  .dot {
+    width: 0.3rem;
+    height: 0.3rem;
+  }
+  .prop-image {
+    display: none;
+  }
+  .project-description {
+    font-size: 0.65rem;
+    line-height: 0.85rem;
+  }
+  .btn-container {
+    font-size: 0.6rem;
+  }
+  .btn-dark {
+    border: 1.5px solid white;
+  }
+  .btn-light {
+    border: 1.5px solid #141414;
+  }
+  .lm-light,
+  .lm-dark,
+  .ts-light,
+  .ts-dark {
+    justify-content: flex-start;
+  }
+  .squareContainer {
+    width: 12rem;
+    height: 12rem;
+    margin: 1em;
+  }
+  .subSerial {
+    font-size: 7rem;
+  }
+  .minorProjectCategory {
+    font-size: 1.7rem;
+  }
+  .subProjectText {
+    font-size: 0.9rem;
+  }
+  .hiddenContainer {
+    border: 3px solid #fd5900;
+  }
+}
