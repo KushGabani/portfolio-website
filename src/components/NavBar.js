@@ -63,7 +63,6 @@ const Menu = styled.ol`
   
   @media only screen and (max-width: 768px) {
     width: 100%;
-    font-size: 0.8rem;
     justify-content: center;
     align-items: center;
   }
