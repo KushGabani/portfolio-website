@@ -2,7 +2,6 @@ import * as React from "react";
 import styled from "styled-components";
 
 import { colors } from "../colors";
-import { Cursor } from "../cursor";
 import "@fontsource/nothing-you-could-do";
 
 import GlobalStyle from "../GlobalStyle";
@@ -19,7 +18,6 @@ const Wrapper = styled.div`
 
 const IndexPage = () => (
   <React.Fragment>
-    <Cursor />
     <GlobalStyle />
     <Wrapper>
       <NavBar />
