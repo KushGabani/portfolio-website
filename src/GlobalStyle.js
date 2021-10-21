@@ -4,7 +4,7 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import {colors} from "./Colors";
 
-import "./typography.css";
+import "@fontsource/azeret-mono"
 
 const Style = createGlobalStyle`
   * {
@@ -17,7 +17,7 @@ const Style = createGlobalStyle`
     width: 100vw;
     box-sizing: border-box;
     background-color: white;
-    font-family: "sf_monoregular";
+    font-family: "Azeret Mono";
   }
 
   ::-moz-selection {

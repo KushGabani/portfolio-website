@@ -13,22 +13,22 @@ const SocialIcon = styled.li`
 const Socials = () => (
   <Social>
     <SocialIcon>
-      <StaticImage src="./../assets/Github.svg" alt={"Github"} />
+      <StaticImage src="./../assets/Github.png" alt={"Github"} />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/LinkedIn.svg" alt={"LinkedIn"} />
+      <StaticImage src="./../assets/LinkedIn.png" alt={"LinkedIn"} />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Twitter.svg" alt={"Twitter"} />
+      <StaticImage src="./../assets/Twitter.png" alt={"Twitter"} />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Medium.svg" alt={"Medium"} />
+      <StaticImage src="./../assets/Medium.png" alt={"Medium"} />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Pinterest.svg" alt={"Pinterest"} />
+      <StaticImage src="./../assets/Pinterest.png" alt={"Pinterest"} />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Instagram.svg" alt={"Instagram"} />
+      <StaticImage src="./../assets/Instagram.png" alt={"Instagram"} />
     </SocialIcon>
   </Social>
 );

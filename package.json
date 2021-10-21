@@ -12,9 +12,11 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
+    "@fontsource/azeret-mono": "^4.5.1",
     "@fontsource/nothing-you-could-do": "^4.5.0",
     "@fontsource/work-sans": "^4.5.1",
     "babel-plugin-styled-components": "^1.13.3",
