@@ -68,8 +68,7 @@ const Left = styled.div`
 
 const Info = styled.div``;
 const Name = styled.span`
-  font-family: "Work Sans";
-  font-weight: bold;
+  font-family: "Work Sans SemiBold";
   font-size: 4rem;
   line-height: 6rem;
   color: ${colors.white};
