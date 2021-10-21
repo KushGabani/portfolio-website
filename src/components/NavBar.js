@@ -24,7 +24,7 @@ const NavBar = () => (
 export default NavBar;
 
 const NavWrapper = styled.div`
-  padding: 1.5rem 6rem;
+  padding: 2rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@ const Logo = styled.div`
   @media only screen and (max-width: 375px) {
     margin-bottom: 1rem;
   }
-  
+
   @media only screen and (max-width: 768px) {
     margin-bottom: 1.5rem;
   }
@@ -56,11 +56,11 @@ const Menu = styled.ol`
   display: flex;
   list-style: none;
   font-size: 1.1rem;
-  
+
   @media only screen and (max-width: 375px) {
     flex-direction: column;
   }
-  
+
   @media only screen and (max-width: 768px) {
     width: 100%;
     justify-content: center;
@@ -70,6 +70,7 @@ const Menu = styled.ol`
 
 const MenuItem = styled.li`
   margin-left: 4rem;
+
   &:nth-child(1) {
     margin-left: 0;
   }

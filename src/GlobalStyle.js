@@ -1,3 +1,5 @@
+// noinspection CssNoGenericFontName
+
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 import {colors} from "./Colors";
@@ -15,7 +17,7 @@ const Style = createGlobalStyle`
     width: 100vw;
     box-sizing: border-box;
     background-color: white;
-    font-family: "sf_monoregular", serif;
+    font-family: "sf_monoregular";
   }
 
   ::-moz-selection {
