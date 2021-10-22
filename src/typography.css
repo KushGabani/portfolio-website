@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'sf_monoregular';
+    src: url('fonts/sfmonoregular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monosemibold';
+    src: url('fonts/sfmonosemibold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monobold';
+    src: url('fonts/sfmonobold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monolight';
+    src: url('fonts/sfmonolight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_monomedium';
+    src: url('fonts/sfmonomedium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -8,6 +8,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { colors } from "../Colors";
 import "@fontsource/work-sans";
 import "@fontsource/nothing-you-could-do";
+import "./../typography.css";
 import Socials from "../units/Socials";
 
 const HeroWrapper = styled.div`
@@ -87,7 +88,7 @@ const Tag = styled.p`
 
 const Desc = styled.div`
   margin: 4rem 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 33px;
   padding: 0.2rem 0 0.2rem 2rem;
   border-left: 1px solid #c8c8c8;
@@ -112,8 +113,7 @@ const Outline = styled.div`
 
 const ResumeButton = styled.button`
   color: ${colors.black};
-  font-family: "Azeret Mono";
-  font-weight: 600;
+  font-family: "sf_monomedium";
   padding: 0.5rem 2rem;
   font-size: 1.1rem;
   border-radius: 0;
@@ -141,8 +141,8 @@ const Right = styled.div`
 
 const Mail = styled.p`
   margin: 2rem 0;
-  font-family: "Azeret Mono";
-  font-size: 1.2rem;
+  font-family: "sf_monoregular";
+  font-size: 1.3rem;
 `;
 
 

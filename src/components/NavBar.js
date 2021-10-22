@@ -55,7 +55,7 @@ const Logo = styled.div`
 const Menu = styled.ol`
   display: flex;
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 
   @media only screen and (max-width: 375px) {
     flex-direction: column;
