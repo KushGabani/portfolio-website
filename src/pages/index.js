@@ -17,6 +17,10 @@ const Wrapper = styled.div`
   flex-flow: column;
   margin: 0 auto;
   background-color: ${colors.black};
+
+  @media only screen and (max-width: 300px) {
+    height: auto;
+  }
 `;
 
 const IndexPage = () => (

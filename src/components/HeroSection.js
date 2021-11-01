@@ -19,11 +19,8 @@ const HeroWrapper = styled.div`
   justify-content: space-evenly;
   position: relative;
   @media only screen and (max-width: 1100px) {
+    justify-content: center;
     flex-direction: column;
-  }
-
-  @media only screen and (max-width: 600px) {
-    justify-content: space-between;
   }
 `;
 
@@ -55,17 +52,13 @@ const Left = styled.div`
   }
 
   @media only screen and (max-width: 650px) {
-    margin: 10rem 3rem 0;
+    margin: 0 2.5rem;
     &:before {
-      top: -2.5rem;
-      left: -1rem;
-      font-size: 1.5rem;
+      content: "";
     }
 
     &:after {
-      bottom: -3rem;
-      left: -1rem;
-      font-size: 1.5rem;
+      content: "";
     }
   }
 `;
@@ -187,6 +180,10 @@ const Middle = styled.div`
   position: absolute;
   bottom: 3rem;
   left: 50%;
+
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const HeroSection = () => {
