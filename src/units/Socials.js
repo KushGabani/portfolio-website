@@ -8,27 +8,59 @@ const Social = styled.ol`
 `;
 const SocialIcon = styled.li`
   margin: 0 1rem;
+
+  @media only screen and (min-width: 2000px) {
+    margin: 0 1.5rem;
+    .socials {
+      width: 2.4rem;
+      height: 2.3rem;
+    }
+  }
 `;
 
 const Socials = () => (
   <Social>
     <SocialIcon>
-      <StaticImage src="./../assets/Github.png" alt={"Github"} />
+      <StaticImage
+        className={"socials"}
+        src="./../assets/Github.png"
+        alt={"Github"}
+      />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/LinkedIn.png" alt={"LinkedIn"} />
+      <StaticImage
+        className={"socials"}
+        src="./../assets/LinkedIn.png"
+        alt={"LinkedIn"}
+      />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Twitter.png" alt={"Twitter"} />
+      <StaticImage
+        className={"socials"}
+        src="./../assets/Twitter.png"
+        alt={"Twitter"}
+      />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Medium.png" alt={"Medium"} />
+      <StaticImage
+        className={"socials"}
+        src="./../assets/Medium.png"
+        alt={"Medium"}
+      />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Pinterest.png" alt={"Pinterest"} />
+      <StaticImage
+        className={"socials"}
+        src="./../assets/Pinterest.png"
+        alt={"Pinterest"}
+      />
     </SocialIcon>
     <SocialIcon>
-      <StaticImage src="./../assets/Instagram.png" alt={"Instagram"} />
+      <StaticImage
+        className={"socials"}
+        src="./../assets/Instagram.png"
+        alt={"Instagram"}
+      />
     </SocialIcon>
   </Social>
 );

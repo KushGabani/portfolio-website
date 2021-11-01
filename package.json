@@ -8,12 +8,12 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "@fontsource/azeret-mono": "^4.5.1",

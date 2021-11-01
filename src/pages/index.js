@@ -7,6 +7,7 @@ import "@fontsource/nothing-you-could-do";
 import GlobalStyle from "../GlobalStyle";
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Wrapper = styled.div`
   height: 100vh;

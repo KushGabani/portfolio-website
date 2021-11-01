@@ -16,20 +16,24 @@ const HeroWrapper = styled.div`
   width: 100%;
   flex-grow: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  position: relative;
   @media only screen and (max-width: 1100px) {
-    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 600px) {
+    justify-content: space-between;
   }
 `;
 
 const Left = styled.div`
-  margin-right: 5rem;
   position: relative;
 
   &:before {
     position: absolute;
     top: -5rem;
-    left: -8rem;
+    left: -4rem;
     content: "<brief>";
     font-size: 3rem;
     opacity: 0.15;
@@ -40,7 +44,7 @@ const Left = styled.div`
     content: "</brief>";
     position: absolute;
     bottom: -7rem;
-    left: -9rem;
+    left: -4rem;
     font-size: 3rem;
     opacity: 0.15;
     font-family: "Nothing You Could Do";
@@ -51,18 +55,17 @@ const Left = styled.div`
   }
 
   @media only screen and (max-width: 650px) {
-    margin-left: 5rem;
-    margin-right: 1.5rem;
+    margin: 10rem 3rem 0;
     &:before {
-      top: -4rem;
+      top: -2.5rem;
       left: -1rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     &:after {
-      bottom: -4rem;
+      bottom: -3rem;
       left: -1rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -70,33 +73,54 @@ const Left = styled.div`
 const Info = styled.div``;
 const Name = styled.span`
   font-family: "Work Sans SemiBold";
-  font-size: 4rem;
-  line-height: 6rem;
+  font-size: 3rem;
+  line-height: 4rem;
   color: ${colors.white};
   @media only screen and (max-width: 650px) {
     font-size: 2.8rem;
   }
+
+  @media only screen and (min-width: 2000px) {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
 `;
 const Tag = styled.p`
   font-family: "Work Sans SemiBold";
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #7b7b7b;
   @media only screen and (max-width: 650px) {
     font-size: 1.8rem;
+  }
+
+  @media only screen and (min-width: 2000px) {
+    font-size: 2.5rem;
   }
 `;
 
 const Desc = styled.div`
   margin: 4rem 0;
-  font-size: 1.1rem;
-  line-height: 33px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   padding: 0.2rem 0 0.2rem 2rem;
   border-left: 1px solid #c8c8c8;
+
+  p {
+    max-width: 500px;
+  }
 
   @media only screen and (max-width: 650px) {
     margin: 3rem 0;
     font-size: 1rem;
     line-height: 30px;
+  }
+
+  @media only screen and (min-width: 2000px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    p {
+      max-width: 800px;
+    }
   }
 `;
 
@@ -132,10 +156,20 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 4rem;
   color: #c8c8c8;
+  .hero-image {
+    width: 470px;
+    height: 470px;
+  }
   @media only screen and (max-width: 1100px) {
     display: none;
+  }
+
+  @media only screen and (min-width: 2000px) {
+    .hero-image {
+      width: 600px;
+      height: 600px;
+    }
   }
 `;
 
@@ -143,8 +177,17 @@ const Mail = styled.p`
   margin: 2rem 0;
   font-family: "sf_monoregular";
   font-size: 1.3rem;
+
+  @media only screen and (min-width: 2000px) {
+    font-size: 1.7rem;
+  }
 `;
 
+const Middle = styled.div`
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+`;
 
 const HeroSection = () => {
   const metaData = useStaticQuery(graphql`
@@ -171,19 +214,20 @@ const HeroSection = () => {
           <Tag>{metaData.site.siteMetadata.tag}</Tag>
         </Info>
         <Desc>
-          <p style={{ "max-width": "600px" }}>
-            {metaData.site.siteMetadata.description}
-          </p>
+          <p>{metaData.site.siteMetadata.description}</p>
         </Desc>
         <Outline>
           <ResumeButton>.resume()</ResumeButton>
         </Outline>
       </Left>
+      <Middle>
+        <StaticImage src={"./../assets/down-array.png"} alt={"more svg"} />
+      </Middle>
       <Right>
         <StaticImage
+          className={`hero-image`}
           src={"./../assets/homeprop.png"}
           alt={"prop"}
-          width={600}
         />
 
         <Mail>{metaData.site.siteMetadata.mail}</Mail>

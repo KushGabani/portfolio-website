@@ -2,9 +2,9 @@
 
 import React from "react";
 import { createGlobalStyle } from "styled-components";
-import {colors} from "./Colors";
+import { colors } from "./Colors";
 
-import "./typography.css"
+import "./typography.css";
 
 const Style = createGlobalStyle`
   * {
@@ -30,8 +30,6 @@ const Style = createGlobalStyle`
   }
 `;
 
-const GlobalStyle = () => (
-  <Style />
-);
+const GlobalStyle = () => <Style />;
 
 export default GlobalStyle;
