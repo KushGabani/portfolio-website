@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
 import { StaticImage } from "gatsby-plugin-image";
-import "@fontsource/work-sans";
 
 const Card = ({ index, title, subtitle, description, stack, githubLink }) => (
   <a href={githubLink} style={{textDecoration: "none"}}>
@@ -57,7 +56,7 @@ const CardHeader = styled.div`
 `;
 
 const Index = styled.span`
-  font-family: "Work Sans SemiBold", sans-serif;
+  font-family: "worksans_semibold", sans-serif;
   -webkit-text-stroke: 1px ${colors.orange};
   letter-spacing: 0.025em;
   color: transparent;
@@ -75,7 +74,7 @@ const Index = styled.span`
 const CardBody = styled.p`
   margin: 1rem 0;
   font-size: 1.4rem;
-  font-family: "Work Sans SemiBold", sans-serif;
+  font-family: "worksans_semibold", sans-serif;
   line-height: 27px;
 
   @media all and (max-width: 300px) {
@@ -89,7 +88,7 @@ const CardBody = styled.p`
 `;
 
 const CardDescription = styled.p`
-  font-family: "Work Sans", sans-serif;
+  font-family: "worksans_regular", sans-serif;
   font-size: 1rem;
   color: ${colors.lightgray};
 
