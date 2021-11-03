@@ -42,9 +42,6 @@ const HeroSection = () => {
           <ResumeButton>.resume()</ResumeButton>
         </Outline>
       </Left>
-      <Middle>
-        <StaticImage src={"./../assets/down-array.png"} alt={"more svg"} />
-      </Middle>
       <Right>
         <StaticImage
           className={`hero-image`}
@@ -69,6 +66,10 @@ const HeroWrapper = styled.div`
   @media only screen and (max-width: 1100px) {
     justify-content: center;
     flex-direction: column;
+  }
+
+  @media only screen and (max-width: 450px) {
+    justify-content: center;
   }
 `;
 
@@ -221,16 +222,6 @@ const Mail = styled.p`
 
   @media only screen and (min-width: 2000px) {
     font-size: 1.7rem;
-  }
-`;
-
-const Middle = styled.div`
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-
-  @media only screen and (max-width: 500px) {
-    display: none;
   }
 `;
 
