@@ -11,6 +11,54 @@ import "@fontsource/nothing-you-could-do";
 import "./../typography.css";
 import Socials from "../units/Socials";
 
+const HeroSection = () => {
+  const metaData = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          name
+          description
+          tag
+          mail
+        }
+      }
+    }
+  `);
+
+  return (
+    <HeroWrapper>
+      <Left>
+        <Info>
+          <Name>
+            {metaData.site.siteMetadata.name}
+            <span style={{ color: `${colors.orange}` }}>;</span>
+          </Name>
+          <Tag>{metaData.site.siteMetadata.tag}</Tag>
+        </Info>
+        <Desc>
+          <p>{metaData.site.siteMetadata.description}</p>
+        </Desc>
+        <Outline>
+          <ResumeButton>.resume()</ResumeButton>
+        </Outline>
+      </Left>
+      <Middle>
+        <StaticImage src={"./../assets/down-array.png"} alt={"more svg"} />
+      </Middle>
+      <Right>
+        <StaticImage
+          className={`hero-image`}
+          src={"./../assets/homeprop.png"}
+          alt={"prop"}
+        />
+
+        <Mail>{metaData.site.siteMetadata.mail}</Mail>
+        <Socials />
+      </Right>
+    </HeroWrapper>
+  );
+};
+
 const HeroWrapper = styled.div`
   display: flex;
   width: 100%;
@@ -178,60 +226,12 @@ const Mail = styled.p`
 
 const Middle = styled.div`
   position: absolute;
-  bottom: 3rem;
+  bottom: 1rem;
   left: 50%;
 
   @media only screen and (max-width: 500px) {
     display: none;
   }
 `;
-
-const HeroSection = () => {
-  const metaData = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          name
-          description
-          tag
-          mail
-        }
-      }
-    }
-  `);
-
-  return (
-    <HeroWrapper>
-      <Left>
-        <Info>
-          <Name>
-            {metaData.site.siteMetadata.name}
-            <span style={{ color: `${colors.orange}` }}>;</span>
-          </Name>
-          <Tag>{metaData.site.siteMetadata.tag}</Tag>
-        </Info>
-        <Desc>
-          <p>{metaData.site.siteMetadata.description}</p>
-        </Desc>
-        <Outline>
-          <ResumeButton>.resume()</ResumeButton>
-        </Outline>
-      </Left>
-      <Middle>
-        <StaticImage src={"./../assets/down-array.png"} alt={"more svg"} />
-      </Middle>
-      <Right>
-        <StaticImage
-          className={`hero-image`}
-          src={"./../assets/homeprop.png"}
-          alt={"prop"}
-        />
-
-        <Mail>{metaData.site.siteMetadata.mail}</Mail>
-        <Socials />
-      </Right>
-    </HeroWrapper>
-  );
-};
 
 export default HeroSection;

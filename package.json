@@ -16,15 +16,16 @@
     "format": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
-    "@fontsource/azeret-mono": "^4.5.1",
     "@fontsource/nothing-you-could-do": "^4.5.0",
     "@fontsource/work-sans": "^4.5.1",
     "babel-plugin-styled-components": "^1.13.3",
+    "dotenv": "^10.0.0",
     "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-react-helmet": "^5.0.0",
     "gatsby-plugin-sharp": "^4.0.0",
     "gatsby-plugin-styled-components": "^5.0.0",
+    "gatsby-source-contentful": "^6.1.0",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-sharp": "^4.0.0",
     "react": "^17.0.2",
