@@ -56,7 +56,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   position: relative;
-  
+
   @media all and (max-width: 1000px) {
     display: none;
   }
@@ -162,7 +162,7 @@ const ContactInfo = styled.div`
     background-color: ${colors.lightgray};
     opacity: 0.5;
   }
-  
+
   &:hover {
     opacity: 0.7;
   }

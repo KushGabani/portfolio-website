@@ -20,9 +20,9 @@ const IndexPage = () => (
       <Label text={"work"} />
       <WorkCards />
     </WorkWrapper>
-      <ContactWrapper>
-          <Contact />
-      </ContactWrapper>
+    <ContactWrapper>
+      <Contact />
+    </ContactWrapper>
   </React.Fragment>
 );
 

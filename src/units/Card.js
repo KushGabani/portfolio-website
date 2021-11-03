@@ -4,7 +4,7 @@ import { colors } from "../Colors";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Card = ({ index, title, subtitle, description, stack, githubLink }) => (
-  <a href={githubLink} style={{textDecoration: "none"}}>
+  <a href={githubLink} style={{ textDecoration: "none" }}>
     <Container>
       <CardHeader>
         <Index>{index}</Index>

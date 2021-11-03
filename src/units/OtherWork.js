@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {colors} from "../Colors";
+import { colors } from "../Colors";
 
 const Container = styled.div`
   margin: 0.5rem 1rem;
@@ -8,7 +8,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   color: ${colors.lightblack};
-  
+
   @media all and (max-width: 600px) {
     flex-direction: column;
     justify-content: center;
@@ -20,9 +20,15 @@ const Container = styled.div`
   }
 `;
 
-const OtherWork = () => <Container>
-    <p>View <u>open-source contributions</u></p>
-    <p>View <u>project history</u></p>
-</Container>
+const OtherWork = () => (
+  <Container>
+    <p>
+      View <u>open-source contributions</u>
+    </p>
+    <p>
+      View <u>project history</u>
+    </p>
+  </Container>
+);
 
 export default OtherWork;
