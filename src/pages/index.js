@@ -13,23 +13,23 @@ import WorkCards from "../components/WorkCards";
 const IndexPage = () => (
   <React.Fragment>
     <GlobalStyle />
+    <NavBar />
     <HeroWrapper>
-      <NavBar />
       <HeroSection />
     </HeroWrapper>
-      <WorkWrapper>
-          <Label text={"work"} />
-          <WorkCards />
-      </WorkWrapper>
+    <WorkWrapper>
+      <Label text={"work"} />
+      <WorkCards />
+    </WorkWrapper>
   </React.Fragment>
 );
 
 const HeroWrapper = styled.div`
-  height: 100vh;
   max-width: 2000px;
   display: flex;
   flex-flow: column;
   margin: 0 auto;
+  padding: 7rem 0;
   background-color: ${colors.black};
 
   @media only screen and (max-width: 300px) {
@@ -38,13 +38,13 @@ const HeroWrapper = styled.div`
 `;
 
 const WorkWrapper = styled.div`
-  height: 100vh;
   max-width: 2000px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   margin: 0 auto;
+  padding: 3rem 0;
   background-color: ${colors.black};
 
   @media only screen and (max-width: 600px) {

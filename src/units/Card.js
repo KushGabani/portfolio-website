@@ -5,25 +5,25 @@ import { StaticImage } from "gatsby-plugin-image";
 import "@fontsource/work-sans";
 
 const Card = ({ index, title, subtitle, description, stack, githubLink }) => (
-  <Container>
-    <CardHeader>
-      <Index>{index}</Index>
-      <a href={githubLink}>
+  <a href={githubLink} style={{textDecoration: "none"}}>
+    <Container>
+      <CardHeader>
+        <Index>{index}</Index>
         <StaticImage src={"./../assets/Github.png"} alt={"Github"} />
-      </a>
-    </CardHeader>
-    <CardBody>
-      {title}
-      <br />
-      {subtitle}
-    </CardBody>
-    <CardDescription>{description}</CardDescription>
-    <Stack>
-      {stack.map((item) => (
-        <StackItem>{item}</StackItem>
-      ))}
-    </Stack>
-  </Container>
+      </CardHeader>
+      <CardBody>
+        {title}
+        <br />
+        {subtitle}
+      </CardBody>
+      <CardDescription>{description}</CardDescription>
+      <Stack>
+        {stack.map((item) => (
+          <StackItem>{item}</StackItem>
+        ))}
+      </Stack>
+    </Container>
+  </a>
 );
 
 const Container = styled.div`
@@ -92,7 +92,7 @@ const CardDescription = styled.p`
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   color: ${colors.lightgray};
-  
+
   @media all and (max-width: 300px) {
     font-size: 0.9rem;
   }
