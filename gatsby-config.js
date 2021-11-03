@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   pathPrefix: "/portfolio-website",
   siteMetadata: {
@@ -22,6 +24,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],
