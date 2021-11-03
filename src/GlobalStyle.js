@@ -15,7 +15,7 @@ const Style = createGlobalStyle`
     scroll-behavior: smooth;
     box-sizing: border-box;
     background-color: white;
-    font-family: "sf_monoregular", "JetBrains Mono", monospace;
+    font-family: "sf_monoregular", monospace;
   }
 
   ::-moz-selection {

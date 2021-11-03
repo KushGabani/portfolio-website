@@ -5,7 +5,7 @@ import { colors } from "../Colors";
 const NavBar = () => (
   <NavWrapper>
     <Logo>
-      K<span style={{ "textDecoration": "underline" }}>G</span>
+      K<span style={{ textDecoration: "underline" }}>G</span>
     </Logo>
     <Menu>
       <MenuItem>

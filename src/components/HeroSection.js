@@ -6,8 +6,6 @@ import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { colors } from "../Colors";
-import "@fontsource/work-sans";
-import "@fontsource/nothing-you-could-do";
 import "./../typography.css";
 import Socials from "../units/Socials";
 
@@ -83,7 +81,7 @@ const Left = styled.div`
     content: "<brief>";
     font-size: 3rem;
     opacity: 0.15;
-    font-family: "Nothing You Could Do";
+    font-family: "nycd_regular";
   }
 
   &:after {
@@ -93,7 +91,7 @@ const Left = styled.div`
     left: -4rem;
     font-size: 3rem;
     opacity: 0.15;
-    font-family: "Nothing You Could Do";
+    font-family: "nycd_regular";
   }
 
   @media only screen and (max-width: 1100px) {
@@ -114,7 +112,7 @@ const Left = styled.div`
 
 const Info = styled.div``;
 const Name = styled.span`
-  font-family: "Work Sans SemiBold";
+  font-family: "worksans_semibold";
   font-size: 3rem;
   line-height: 4rem;
   color: ${colors.white};
@@ -128,7 +126,7 @@ const Name = styled.span`
   }
 `;
 const Tag = styled.p`
-  font-family: "Work Sans SemiBold";
+  font-family: "worksans_semibold";
   font-size: 1.8rem;
   color: #7b7b7b;
   @media only screen and (max-width: 650px) {
