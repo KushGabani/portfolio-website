@@ -48,7 +48,8 @@ const Container = styled.div`
   padding: 1.5rem;
   transition: 0.1s margin ease-in;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     margin-top: 0.5rem;
     filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.1));
     background-color: ${colors.white};

@@ -9,12 +9,12 @@ const OpenSourceCard = ({ index, label, link }) => {
     sr.reveal(".card", srConfig());
   }, []);
   return (
-    <a href={link} style={{ textDecoration: "none",  margin: 0 }}>
+    <a href={link} style={{ textDecoration: "none", margin: 0 }}>
       <CardContainer className={"card"}>
         <p className={"index"}>0{index}.</p>
         <p className={"label"}>{label}</p>
       </CardContainer>
-        <Empty />
+      <Empty />
     </a>
   );
 };
@@ -44,7 +44,7 @@ const CardContainer = styled.div`
   @media all and (max-width: 450px) {
     margin: 0;
   }
-  
+
   @media all and (max-width: 300px) {
     width: 80vw;
     .label {

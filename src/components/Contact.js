@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import Label from "../units/Label";
@@ -8,7 +8,7 @@ import "./../typography.css";
 import Socials from "../units/Socials";
 import { FaMapPin } from "react-icons/all";
 import sr from "../units/sr";
-import {srConfig} from "../scroll-config";
+import { srConfig } from "../scroll-config";
 
 const Contact = () => {
   useEffect(() => {
@@ -25,15 +25,15 @@ const Contact = () => {
         </LocationButton>
       </Left>
       <Right>
-        <Label text={"contact"}  className={"contact"} />
-        <LabelWrapper  className={"contact"}>
+        <Label text={"contact"} className={"contact"} />
+        <LabelWrapper className={"contact"}>
           <LabelText>
             Get in <span style={{ color: `${colors.orange}` }}>touch</span>
           </LabelText>
           <Subtitle>GOT A PROJECT? TELL ME EVERYTHING</Subtitle>
           <ReachButton>REACH ME!</ReachButton>
 
-          <ContactInfo  className={"contact"}>
+          <ContactInfo className={"contact"}>
             <span>+91 8140244500</span>
             <hr />
             <span>kushgabz2687@gmail.com</span>

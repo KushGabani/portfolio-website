@@ -34,6 +34,4 @@ const OtherWork = () => (
     </Link>
   </Container>
 );
-;
-
 export default OtherWork;

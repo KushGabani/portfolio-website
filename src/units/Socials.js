@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import {
-    FaGithub,
-    FaInstagram,
-    FaLinkedin,
-    FaMediumM,
-    FaPinterest,
-    FaTwitter,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaMediumM,
+  FaPinterest,
+  FaTwitter,
 } from "react-icons/fa";
 
 const Socials = () => (
