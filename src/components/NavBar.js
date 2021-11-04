@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
-import { Link } from "react-scroll";
+import scrollTo from "gatsby-plugin-smoothscroll";
+import {Link} from "../../.cache/gatsby-browser-entry";
 
 const NavBar = () => (
   <NavWrapper>
@@ -11,26 +12,14 @@ const NavBar = () => (
       </Logo>
     </Link>
     <Menu>
-      <MenuItem>
-        <Link
-          to="work"
-          smooth={true}
-          duration={200}
-        >
-          .work<Accent>()</Accent>
-        </Link>
+      <MenuItem onClick={() => scrollTo("#work")}>
+        .work<Accent>()</Accent>
       </MenuItem>
       <MenuItem>
-          .about<Accent>()</Accent>
+        .about<Accent>()</Accent>
       </MenuItem>
-      <MenuItem>
-        <Link
-          to="contact"
-          smooth={true}
-          duration={200}
-        >
-          .contact<Accent>()</Accent>
-        </Link>
+      <MenuItem onClick={() => scrollTo("#contact")}>
+        .contact<Accent>()</Accent>
       </MenuItem>
     </Menu>
   </NavWrapper>

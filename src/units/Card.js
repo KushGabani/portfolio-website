@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
 import { FaGithub } from "react-icons/fa";
-import sr from "./sr";
-import { srConfig } from "../scroll-config";
 
 const Card = ({
   index,
@@ -13,10 +11,6 @@ const Card = ({
   stack = [],
   githubLink,
 }) => {
-  useEffect(() => {
-    sr.reveal(".card", srConfig());
-  }, []);
-
   return (
     <a href={githubLink} style={{ textDecoration: "none" }} className={"card"}>
       <Container>

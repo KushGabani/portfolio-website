@@ -8,9 +8,11 @@ import HeroSection from "../components/HeroSection";
 import Label from "../units/Label";
 import WorkCards from "../components/WorkCards";
 import Contact from "../components/Contact";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => (
-  <React.Fragment>
+  <>
+    <Helmet title="KG | Home" />
     <GlobalStyle />
     <NavBar />
     <HeroWrapper>
@@ -23,7 +25,7 @@ const IndexPage = () => (
     <ContactWrapper id={"contact"}>
       <Contact />
     </ContactWrapper>
-  </React.Fragment>
+  </>
 );
 
 const HeroWrapper = styled.div`

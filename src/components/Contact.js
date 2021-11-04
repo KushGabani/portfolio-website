@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import Label from "../units/Label";
@@ -7,14 +7,8 @@ import { colors } from "../Colors";
 import "./../typography.css";
 import Socials from "../units/Socials";
 import { FaMapPin } from "react-icons/all";
-import sr from "../units/sr";
-import { srConfig } from "../scroll-config";
 
 const Contact = () => {
-  useEffect(() => {
-    sr.reveal(".contact", srConfig());
-  }, []);
-
   return (
     <Container>
       <Left>

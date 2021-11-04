@@ -1,17 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
 import Card from "../units/Card";
 import OtherWork from "../units/OtherWork";
 import { graphql, useStaticQuery } from "gatsby";
-import sr from "../units/sr";
-import { srConfig } from "../scroll-config";
 
 const WorkCards = () => {
-  useEffect(() => {
-    sr.reveal(".work", srConfig());
-  }, []);
-
   const projects = useStaticQuery(graphql`
     query MyQuery {
       allContentfulWork(sort: { fields: createdAt, order: ASC }) {

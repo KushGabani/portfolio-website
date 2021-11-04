@@ -5,9 +5,11 @@ import GlobalStyle from "../GlobalStyle";
 import NavBar from "../components/NavBar";
 import ArchiveTable from "../components/ArchiveTable";
 import OpenSource from "../components/OpenSource";
+import { Helmet } from "react-helmet";
 
 const Archive = () => (
-  <React.Fragment>
+  <>
+    <Helmet title="KG | Archive" />
     <GlobalStyle />
     <NavBar />
     <PageWrapper>
@@ -27,7 +29,7 @@ const Archive = () => (
         <OpenSource />
       </div>
     </PageWrapper>
-  </React.Fragment>
+  </>
 );
 
 const PageWrapper = styled.div`

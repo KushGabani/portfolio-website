@@ -1,13 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
-import sr from "./sr";
-import { srConfig } from "../scroll-config";
-
 const OpenSourceCard = ({ index, label, link }) => {
-  useEffect(() => {
-    sr.reveal(".card", srConfig());
-  }, []);
   return (
     <a href={link} style={{ textDecoration: "none", margin: 0 }}>
       <CardContainer className={"card"}>

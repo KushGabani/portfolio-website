@@ -1,14 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
-import sr from "../units/sr";
-import { srConfig } from "../scroll-config";
 
 const ArchiveRow = ({ year, title, collaborated, tags }) => {
-  useEffect(() => {
-    sr.reveal(".row", srConfig());
-  }, []);
-
   return (
     <tr className={"row"}>
       <td className={"year"}>{year}</td>
