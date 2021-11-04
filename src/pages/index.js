@@ -16,11 +16,11 @@ const IndexPage = () => (
     <HeroWrapper>
       <HeroSection />
     </HeroWrapper>
-    <WorkWrapper>
+    <WorkWrapper id={"work"}>
       <Label text={"work"} />
       <WorkCards />
     </WorkWrapper>
-    <ContactWrapper>
+    <ContactWrapper id={"contact"}>
       <Contact />
     </ContactWrapper>
   </React.Fragment>

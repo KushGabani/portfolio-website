@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
-import Link from "gatsby-link";
+import { Link } from "react-scroll";
 
 const NavBar = () => (
   <NavWrapper>
@@ -12,13 +12,25 @@ const NavBar = () => (
     </Link>
     <Menu>
       <MenuItem>
-        .work<Accent>()</Accent>
+        <Link
+          to="work"
+          smooth={true}
+          duration={200}
+        >
+          .work<Accent>()</Accent>
+        </Link>
       </MenuItem>
       <MenuItem>
-        .about<Accent>()</Accent>
+          .about<Accent>()</Accent>
       </MenuItem>
       <MenuItem>
-        .contact<Accent>()</Accent>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={200}
+        >
+          .contact<Accent>()</Accent>
+        </Link>
       </MenuItem>
     </Menu>
   </NavWrapper>
