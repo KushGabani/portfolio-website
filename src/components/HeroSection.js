@@ -200,7 +200,6 @@ const Right = styled.div`
 
   .hero-image {
     width: 470px;
-    height: 470px;
   }
 
   @media only screen and (max-width: 1100px) {
@@ -210,7 +209,6 @@ const Right = styled.div`
   @media only screen and (min-width: 2000px) {
     .hero-image {
       width: 600px;
-      height: 600px;
     }
   }
 `;
