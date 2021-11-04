@@ -16,8 +16,6 @@
     "format": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
-    "@fontsource/nothing-you-could-do": "^4.5.0",
-    "@fontsource/work-sans": "^4.5.1",
     "babel-plugin-styled-components": "^1.13.3",
     "dotenv": "^10.0.0",
     "gatsby": "^4.0.0",

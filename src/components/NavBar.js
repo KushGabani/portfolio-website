@@ -5,7 +5,7 @@ import { colors } from "../Colors";
 const NavBar = () => (
   <NavWrapper>
     <Logo>
-      K<span style={{ "textDecoration": "underline" }}>G</span>
+      K<span style={{ textDecoration: "underline" }}>G</span>
     </Logo>
     <Menu>
       <MenuItem>
@@ -25,6 +25,8 @@ export default NavBar;
 
 const NavWrapper = styled.div`
   padding: 2rem 6rem;
+  margin: 0 auto;
+  max-width: 1807px;
   display: flex;
   justify-content: space-between;
   align-items: center;
