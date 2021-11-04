@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import Label from "../units/Label";
@@ -6,42 +6,46 @@ import { colors } from "../Colors";
 
 import "./../typography.css";
 import Socials from "../units/Socials";
+import { FaMapPin } from "react-icons/all";
+import sr from "../units/sr";
+import { srConfig } from "../scroll-config";
 
-const Contact = () => (
-  <Container>
-    <Left>
-      <StaticImage src={"./../assets/contactprop.png"} alt={"Contact Prop"} />
-      <LocationButton>
-        <ButtonText>Find me on Google Maps</ButtonText>
-        <StaticImage
-          src={"./../assets/location.png"}
-          className={"icon"}
-          alt={"Location"}
-          width={18}
-        />
-      </LocationButton>
-    </Left>
-    <Right>
-      <Label text={"contact"} />
-      <LabelWrapper>
-        <LabelText>
-          Get in <span style={{ color: `${colors.orange}` }}>touch</span>
-        </LabelText>
-        <Subtitle>GOT A PROJECT? TELL ME EVERYTHING</Subtitle>
-        <ReachButton>REACH ME!</ReachButton>
+const Contact = () => {
+  useEffect(() => {
+    sr.reveal(".contact", srConfig());
+  }, []);
 
-        <ContactInfo>
-          <span>+91 8140244500</span>
-          <hr />
-          <span>kushgabz2687@gmail.com</span>
-        </ContactInfo>
-      </LabelWrapper>
-      <div style={{ marginBottom: "0.7rem" }}>
-        <Socials />
-      </div>
-    </Right>
-  </Container>
-);
+  return (
+    <Container>
+      <Left>
+        <StaticImage src={"./../assets/contactprop.png"} alt={"Contact Prop"} />
+        <LocationButton>
+          <ButtonText>Find me on Google Maps</ButtonText>
+          <FaMapPin />
+        </LocationButton>
+      </Left>
+      <Right>
+        <Label text={"contact"} className={"contact"} />
+        <LabelWrapper className={"contact"}>
+          <LabelText>
+            Get in <span style={{ color: `${colors.orange}` }}>touch</span>
+          </LabelText>
+          <Subtitle>GOT A PROJECT? TELL ME EVERYTHING</Subtitle>
+          <ReachButton>REACH ME!</ReachButton>
+
+          <ContactInfo className={"contact"}>
+            <span>+91 8140244500</span>
+            <hr />
+            <span>kushgabz2687@gmail.com</span>
+          </ContactInfo>
+        </LabelWrapper>
+        <div style={{ marginBottom: "0.7rem" }}>
+          <Socials />
+        </div>
+      </Right>
+    </Container>
+  );
+};
 
 const Container = styled.div`
   display: flex;

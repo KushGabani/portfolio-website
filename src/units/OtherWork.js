@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
+import { Link } from "gatsby";
 
 const Container = styled.div`
   margin: 0.5rem 1rem;
@@ -10,7 +11,10 @@ const Container = styled.div`
   color: ${colors.lightblack};
 
   @media all and (max-width: 600px) {
-    flex-direction: column;
+    div {
+      display: none;
+    }
+
     justify-content: center;
     font-size: 0.9rem;
   }
@@ -22,13 +26,12 @@ const Container = styled.div`
 
 const OtherWork = () => (
   <Container>
-    <p>
-      View <u>open-source contributions</u>
-    </p>
-    <p>
-      View <u>project history</u>
-    </p>
+    <div />
+    <Link to={"/archive"}>
+      <p>
+        View <u>project archive</u>
+      </p>
+    </Link>
   </Container>
 );
-
 export default OtherWork;

@@ -1,42 +1,84 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
-import { StaticImage } from "gatsby-plugin-image";
+import { FaGithub } from "react-icons/fa";
+import sr from "./sr";
+import { srConfig } from "../scroll-config";
 
-const Card = ({ index, title, subtitle, description, stack, githubLink }) => (
-  <a href={githubLink} style={{ textDecoration: "none" }}>
-    <Container>
-      <CardHeader>
-        <Index>{index}</Index>
-        <StaticImage src={"./../assets/Github.png"} alt={"Github"} />
-      </CardHeader>
-      <CardBody>
-        {title}
-        <br />
-        {subtitle}
-      </CardBody>
-      <CardDescription>{description}</CardDescription>
-      <Stack>
-        {stack.map((item) => (
-          <StackItem>{item}</StackItem>
-        ))}
-      </Stack>
-    </Container>
-  </a>
-);
+const Card = ({
+  index,
+  title,
+  subtitle = "",
+  description = "",
+  stack = [],
+  githubLink,
+}) => {
+  useEffect(() => {
+    sr.reveal(".card", srConfig());
+  }, []);
+
+  return (
+    <a href={githubLink} style={{ textDecoration: "none" }} className={"card"}>
+      <Container>
+        <CardHeader className={"header"}>
+          <Index>{index}</Index>
+          <FaGithub className={"icon"} />
+        </CardHeader>
+        <CardBody className={"body"}>
+          {title}
+          <br />
+          {subtitle}
+        </CardBody>
+        <CardDescription className={"desc"}>{description}</CardDescription>
+        <Stack className={"stack"}>
+          {stack.map((item) => (
+            <StackItem>{item}</StackItem>
+          ))}
+        </Stack>
+      </Container>
+    </a>
+  );
+};
 
 const Container = styled.div`
-  margin: 0.7rem 0.5rem 0.5rem 0.5rem;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
   border-radius: 8px;
   background-color: ${colors.lightblack};
   max-width: 16rem;
   padding: 1.5rem;
   transition: 0.1s margin ease-in;
 
-  @media all and (min-width: 600px) {
-    &:hover {
-      margin-top: 0.5rem;
-      filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.1));
+  &:hover,
+  &:focus {
+    margin-top: 0.5rem;
+    filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.1));
+    background-color: ${colors.white};
+
+    .header {
+      span {
+        -webkit-text-stroke: 2px ${colors.black};
+      }
+
+      .icon {
+        border-radius: 50%;
+        color: ${colors.orange};
+        background-color: ${colors.orange};
+      }
+    }
+
+    .body {
+      color: ${colors.black};
+    }
+
+    .desc {
+      color: ${colors.black};
+      opacity: 0.7;
+    }
+
+    .stack {
+      li {
+        color: ${colors.black};
+      }
     }
   }
 
@@ -53,6 +95,11 @@ const CardHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 const Index = styled.span`
