@@ -24,7 +24,7 @@ const HeroSection = () => {
   `);
 
   return (
-    <HeroWrapper>
+    <HeroWrapper className={".hero"}>
       <Left>
         <Info>
           <Name>
@@ -197,10 +197,12 @@ const Right = styled.div`
   justify-content: center;
   align-items: center;
   color: #c8c8c8;
+
   .hero-image {
     width: 470px;
     height: 470px;
   }
+
   @media only screen and (max-width: 1100px) {
     display: none;
   }

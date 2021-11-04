@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
+import Link from "gatsby-link";
 
 const NavBar = () => (
   <NavWrapper>
-    <Logo>
-      K<span style={{ textDecoration: "underline" }}>G</span>
-    </Logo>
+    <Link to={"/"}>
+      <Logo>
+        K<span style={{ textDecoration: "underline" }}>G</span>
+      </Logo>
+    </Link>
     <Menu>
       <MenuItem>
         .work<Accent>()</Accent>
