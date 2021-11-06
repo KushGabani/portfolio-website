@@ -9,6 +9,11 @@ const Style = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: ${colors.white};
+    -ms-overflow-style: none;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   body, html {

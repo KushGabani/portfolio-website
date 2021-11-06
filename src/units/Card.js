@@ -10,29 +10,27 @@ const Card = ({
   description = "",
   stack = [],
   githubLink,
-}) => {
-  return (
-    <a href={githubLink} style={{ textDecoration: "none" }} className={"card"}>
-      <Container>
-        <CardHeader className={"header"}>
-          <Index>{index}</Index>
-          <FaGithub className={"icon"} />
-        </CardHeader>
-        <CardBody className={"body"}>
-          {title}
-          <br />
-          {subtitle}
-        </CardBody>
-        <CardDescription className={"desc"}>{description}</CardDescription>
-        <Stack className={"stack"}>
-          {stack.map((item) => (
-            <StackItem>{item}</StackItem>
-          ))}
-        </Stack>
-      </Container>
-    </a>
-  );
-};
+}) => (
+  <a href={githubLink} style={{ textDecoration: "none" }} className={"card"}>
+    <Container>
+      <CardHeader className={"header"}>
+        <Index>{index}</Index>
+        <FaGithub className={"icon"} />
+      </CardHeader>
+      <CardBody className={"body"}>
+        {title}
+        <br />
+        {subtitle}
+      </CardBody>
+      <CardDescription className={"desc"}>{description}</CardDescription>
+      <Stack className={"stack"}>
+        {stack.map((item) => (
+          <StackItem>{item}</StackItem>
+        ))}
+      </Stack>
+    </Container>
+  </a>
+);
 
 const Container = styled.div`
   margin: 1rem 0.5rem 0.5rem 0.5rem;
