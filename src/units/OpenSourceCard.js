@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../Colors";
+
 const OpenSourceCard = ({ index, label, link }) => {
   return (
     <a href={link} style={{ textDecoration: "none", margin: 0 }}>

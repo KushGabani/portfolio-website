@@ -7,7 +7,6 @@ import { colors } from "../Colors";
 import "./../typography.css";
 import Socials from "../units/Socials";
 import { FaMapPin } from "react-icons/all";
-
 const Contact = () => {
   return (
     <Container>

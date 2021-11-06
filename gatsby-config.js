@@ -36,5 +36,18 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-scroll-indicator`,
+      options: {
+        // Configure color of the scroll indicator
+        color: "#FD5900",
+        // Height of the scroll indicator
+        height: "3px",
+        // Configure paths where the scroll indicator will appear
+        paths: ["/**"],
+        // Configure the z-index of the indicator element
+        zIndex: `9999`,
+      },
+    },
   ],
 };
