@@ -3,22 +3,23 @@ import styled from "styled-components";
 import { colors } from "../Colors";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import {Link} from "../../.cache/gatsby-browser-entry";
+import {navigate} from "gatsby";
 
-const NavBar = () => (
+const NavBar = ({ fromArchive }) => (
   <NavWrapper>
-    <Link to={"/"}>
+    <Link to={"/"} style={{textDecoration: "none"}}>
       <Logo>
-        K<span style={{ textDecoration: "underline" }}>G</span>
+        K<span style={{ textDecoration: "underline", textDecorationThickness: "3px" }}>G</span>
       </Logo>
     </Link>
     <Menu>
-      <MenuItem onClick={() => scrollTo("#work")}>
+      <MenuItem onClick={() => fromArchive ? navigate("/") : scrollTo("#work")}>
         .work<Accent>()</Accent>
       </MenuItem>
-      <MenuItem>
+      <MenuItem onClick={() => fromArchive ? navigate("/") :  scrollTo("#about")}>
         .about<Accent>()</Accent>
       </MenuItem>
-      <MenuItem onClick={() => scrollTo("#contact")}>
+      <MenuItem onClick={() => fromArchive ? navigate("/") :  scrollTo("#contact")}>
         .contact<Accent>()</Accent>
       </MenuItem>
     </Menu>
@@ -37,7 +38,7 @@ const NavWrapper = styled.div`
   background: #1f1f1f;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px)  {
     flex-direction: column;
     justify-content: center;
   }
@@ -76,7 +77,7 @@ const Menu = styled.ol`
 
 const MenuItem = styled.li`
   margin-left: 4rem;
-
+  cursor: pointer;
   &:nth-child(1) {
     margin-left: 0;
   }

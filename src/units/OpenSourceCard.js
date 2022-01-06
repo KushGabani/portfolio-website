@@ -21,6 +21,7 @@ const CardContainer = styled.div`
   padding: 0.7rem;
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
+  color: ${colors.white};
 
   .index {
     font-family: "worksans_semibold", sans-serif;

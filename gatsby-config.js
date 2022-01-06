@@ -5,15 +5,15 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://kushgabani.github.io/portfolio-website",
     name: "Kush Gabani",
-    description: `Hello World, I’m a software engineer specializing in training Deep
-            Learning Models and creating web solutions. Currently, I’m focused
-            on creating easy-to-access deep learning models for real-life use
-            cases exposed over the internet.`,
+    description: `Hello World, I’m a Software Engineer whose current foci
+                  is ML/DL and MERN stack. I aspire to create
+                  solutions for real-world problems using web technologies and deep learning models.`,
     tag: "making difference, one app at a time",
     mail: "kushgabz2687@gmail.com",
     github: "https://github.com/KushGabani",
     linkedin: "https://www.linkedin.com/in/kush-gabani-910b521b0/",
     instagram: "https:///www.instagram.com/kush.gab",
+    pinterest: "https://in.pinterest.com/kushgabz2687/",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -21,8 +21,9 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
+    `gatsby-plugin-sass`,
     "gatsby-plugin-smoothscroll",
-      "gatsby-plugin-anchor-links",
+    "gatsby-plugin-anchor-links",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

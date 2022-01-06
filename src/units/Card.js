@@ -39,6 +39,7 @@ const Container = styled.div`
   max-width: 16rem;
   padding: 1.5rem;
   transition: 0.1s margin ease-in;
+  color: ${colors.white};
 
   &:hover,
   &:focus {
@@ -54,7 +55,7 @@ const Container = styled.div`
       .icon {
         border-radius: 50%;
         color: ${colors.orange};
-        background-color: ${colors.orange};
+        background-color: ${colors.white};
       }
     }
 

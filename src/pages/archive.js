@@ -11,7 +11,7 @@ const Archive = () => (
   <>
     <Helmet title="KG | Archive" />
     <GlobalStyle />
-    <NavBar />
+      <NavBar fromArchive={true} />
     <PageWrapper>
       <div>
         <ArchiveContainer>

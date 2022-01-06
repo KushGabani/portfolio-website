@@ -8,25 +8,33 @@ import HeroSection from "../components/HeroSection";
 import Label from "../units/Label";
 import WorkCards from "../components/WorkCards";
 import Contact from "../components/Contact";
+import KBarCommandBar from "../components/KBarCommandBar";
 import { Helmet } from "react-helmet";
+import { KBarProvider } from "kbar";
+import resume from "./../assets/resume.pdf";
+import actions from "../units/KBarAction";
 
-const IndexPage = () => (
-  <>
-    <Helmet title="KG | Home" />
-    <GlobalStyle />
-    <NavBar />
-    <HeroWrapper>
-      <HeroSection />
-    </HeroWrapper>
-    <WorkWrapper id={"work"}>
-      <Label text={"work"} />
-      <WorkCards />
-    </WorkWrapper>
-    <ContactWrapper id={"contact"}>
-      <Contact />
-    </ContactWrapper>
-  </>
-);
+const IndexPage = () => {
+  return (
+    <KBarProvider actions={actions}>
+      <KBarCommandBar />
+      <Helmet title="KG | Home" />
+      <GlobalStyle />
+      <a href={resume} target="_blank" rel="noreferrer" id="resume" />
+      <NavBar fromArchive={false} />
+      <HeroWrapper id={"home"}>
+        <HeroSection />
+      </HeroWrapper>
+      <WorkWrapper id={"work"}>
+        <Label text={"work"} />
+        <WorkCards />
+      </WorkWrapper>
+      <ContactWrapper id={"contact"}>
+        <Contact text={"contact"} />
+      </ContactWrapper>
+    </KBarProvider>
+  );
+};
 
 const HeroWrapper = styled.div`
   max-width: 2000px;

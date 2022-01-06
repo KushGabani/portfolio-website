@@ -8,6 +8,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { colors } from "../Colors";
 import "./../typography.css";
 import Socials from "../units/Socials";
+import resume from "../assets/resume.pdf";
 
 const HeroSection = () => {
   const metaData = useStaticQuery(graphql`
@@ -34,10 +35,21 @@ const HeroSection = () => {
           <Tag>{metaData.site.siteMetadata.tag}</Tag>
         </Info>
         <Desc>
-          <p>{metaData.site.siteMetadata.description}</p>
+          <p>
+            {metaData.site.siteMetadata.description}
+            <br />
+            Press <strong>Ctrl + K</strong> to learn more.
+          </p>
         </Desc>
         <Outline>
-          <ResumeButton>.resume()</ResumeButton>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <ResumeButton>.resume()</ResumeButton>
+          </a>
         </Outline>
       </Left>
       <Right>
@@ -143,6 +155,7 @@ const Desc = styled.div`
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 0.2rem 0 0.2rem 2rem;
+  font-family: "sf_monolight";
   border-left: 1px solid #c8c8c8;
 
   p {
@@ -175,10 +188,10 @@ const Outline = styled.div`
   }
 `;
 
-const ResumeButton = styled.button`
+const ResumeButton = styled.div`
   color: ${colors.black};
   font-family: "sf_monomedium";
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   font-size: 1.1rem;
   border-radius: 0;
   border: none;

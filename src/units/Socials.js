@@ -8,29 +8,52 @@ import {
   FaPinterest,
   FaTwitter,
 } from "react-icons/fa";
+import { graphql, useStaticQuery } from "gatsby";
 
-const Socials = () => (
-  <Social>
-    <SocialIcon>
-      <FaGithub />
-    </SocialIcon>
-    <SocialIcon>
-      <FaLinkedin />
-    </SocialIcon>
-    <SocialIcon>
-      <FaTwitter />
-    </SocialIcon>
-    <SocialIcon>
-      <FaMediumM />
-    </SocialIcon>
-    <SocialIcon>
-      <FaPinterest />
-    </SocialIcon>
-    <SocialIcon>
-      <FaInstagram />
-    </SocialIcon>
-  </Social>
-);
+const Socials = () => {
+  const socialData = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          github
+          linkedin
+          instagram
+          pinterest
+        }
+      }
+    }
+  `);
+  return (
+    <Social>
+      <a href={socialData.site.siteMetadata.github} target={"_blank"} rel={"noreferrer"}>
+        <SocialIcon>
+          <FaGithub />
+        </SocialIcon>
+      </a>
+      <a href={socialData.site.siteMetadata.linkedin} target={"_blank"} rel={"noreferrer"}>
+        <SocialIcon>
+          <FaLinkedin />
+        </SocialIcon>
+      </a>
+      <SocialIcon>
+        <FaTwitter />
+      </SocialIcon>
+      <SocialIcon>
+        <FaMediumM />
+      </SocialIcon>
+      <a href={socialData.site.siteMetadata.pinterest} target={"_blank"} rel={"noreferrer"}>
+        <SocialIcon>
+          <FaPinterest />
+        </SocialIcon>
+      </a>
+      <a href={socialData.site.siteMetadata.instagram} target={"_blank"} rel={"noreferrer"}>
+        <SocialIcon>
+          <FaInstagram />
+        </SocialIcon>
+      </a>
+    </Social>
+  );
+};
 
 const Social = styled.ol`
   display: flex;
@@ -38,6 +61,7 @@ const Social = styled.ol`
 `;
 const SocialIcon = styled.li`
   margin: 0 1rem;
+
   svg {
     width: 25px;
     height: 25px;

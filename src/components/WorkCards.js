@@ -35,7 +35,7 @@ const WorkCards = () => {
       <CardGrid>
         {projects.allContentfulWork.edges.map((project, index) => (
           <Card
-            key={project.node.id}
+            key={index}
             index={`0${index + 1}.`}
             title={project.node.title}
             subtitle={project.node.subtitle}

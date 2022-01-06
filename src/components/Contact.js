@@ -7,24 +7,34 @@ import { colors } from "../Colors";
 import "./../typography.css";
 import Socials from "../units/Socials";
 import { FaMapPin } from "react-icons/all";
-const Contact = () => {
+
+const Contact = (props) => {
   return (
     <Container>
       <Left>
         <StaticImage src={"./../assets/contactprop.png"} alt={"Contact Prop"} />
         <LocationButton>
-          <ButtonText>Find me on Google Maps</ButtonText>
+          <a
+            href={
+              "https://www.google.com/maps/place/Trikamnagar-1,+Varachha,+Surat,+Gujarat/@21.2027236,72.8465827,18z/data=!3m1!4b1!4m5!3m4!1s0x3be04eff117f1ff5:0x513e26e54ad864cb!8m2!3d21.2023799!4d72.8478554"
+            }
+            target={"_blank"}
+          >
+            <ButtonText>Find me on Google Maps</ButtonText>
+          </a>
           <FaMapPin />
         </LocationButton>
       </Left>
       <Right>
-        <Label text={"contact"} className={"contact"} />
+        <Label text={props.text} className={"contact"} />
         <LabelWrapper className={"contact"}>
           <LabelText>
             Get in <span style={{ color: `${colors.orange}` }}>touch</span>
           </LabelText>
           <Subtitle>GOT A PROJECT? TELL ME EVERYTHING</Subtitle>
-          <ReachButton>REACH ME!</ReachButton>
+          <a href={"mailto:kushgabz2687@gmail.com"} target={"_blank"} style={{textDecoration: "none"}} rel={"noreferrer"}>
+            <ReachButton>REACH ME!</ReachButton>
+          </a>
 
           <ContactInfo className={"contact"}>
             <span>+91 8140244500</span>
@@ -76,7 +86,7 @@ const LocationButton = styled.div`
 `;
 
 const ButtonText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0 0.5rem;
   font-family: "playfair_bold", serif;
 `;

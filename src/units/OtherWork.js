@@ -27,9 +27,9 @@ const Container = styled.div`
 const OtherWork = () => (
   <Container>
     <div />
-    <Link to={"/archive"}>
-      <p>
-        View <u>project archive</u>
+    <Link to={"/archive"} style={{textDecoration: "none"}}>
+      <p style={{color: colors.white}}>
+          <u>View project archive</u>
       </p>
     </Link>
   </Container>

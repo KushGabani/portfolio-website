@@ -8,18 +8,23 @@ const Style = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    color: ${colors.white};
     -ms-overflow-style: none;
   }
   
   ::-webkit-scrollbar {
     display: none;
   }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   body, html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     background-color: white;
+    color: ${colors.white};
     font-family: "sf_monoregular", monospace;
   }
 
