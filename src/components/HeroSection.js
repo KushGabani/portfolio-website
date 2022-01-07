@@ -156,6 +156,7 @@ const Desc = styled.div`
   line-height: 1.5rem;
   padding: 0.2rem 0 0.2rem 2rem;
   font-family: "sf_monolight";
+  letter-spacing: 0.03em;
   border-left: 1px solid #c8c8c8;
 
   p {
@@ -229,6 +230,7 @@ const Right = styled.div`
 const Mail = styled.p`
   margin: 2rem 0;
   font-family: "sf_monoregular";
+  letter-spacing: 0.03em;
   font-size: 1.3rem;
 
   @media only screen and (min-width: 2000px) {

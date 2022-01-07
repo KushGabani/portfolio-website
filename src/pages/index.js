@@ -13,6 +13,7 @@ import { Helmet } from "react-helmet";
 import { KBarProvider } from "kbar";
 import resume from "./../assets/resume.pdf";
 import actions from "../units/KBarAction";
+import About from "../components/About";
 
 const IndexPage = () => {
   return (
@@ -29,6 +30,10 @@ const IndexPage = () => {
         <Label text={"work"} />
         <WorkCards />
       </WorkWrapper>
+      <AboutWrapper id={"about"}>
+        <Label text={"about"} />
+          <About />
+      </AboutWrapper>
       <ContactWrapper id={"contact"}>
         <Contact text={"contact"} />
       </ContactWrapper>
@@ -50,6 +55,21 @@ const HeroWrapper = styled.div`
 `;
 
 const WorkWrapper = styled.div`
+  max-width: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 0 auto;
+  padding: 3rem 0;
+  background-color: ${colors.black};
+
+  @media only screen and (max-width: 600px) {
+    height: auto;
+  }
+`;
+
+const AboutWrapper = styled.div`
   max-width: 2000px;
   display: flex;
   justify-content: center;

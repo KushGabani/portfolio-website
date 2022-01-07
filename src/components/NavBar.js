@@ -31,7 +31,7 @@ export default NavBar;
 const NavWrapper = styled.div`
   padding: 2rem 6rem;
   margin: 0 auto;
-  max-width: 1807px;
+  max-width: 2000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +77,7 @@ const Menu = styled.ol`
 
 const MenuItem = styled.li`
   margin-left: 4rem;
+  letter-spacing: 0.03em;
   cursor: pointer;
   &:nth-child(1) {
     margin-left: 0;

@@ -23,7 +23,7 @@ const Style = createGlobalStyle`
   body, html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    background-color: white;
+    background-color: white;  
     color: ${colors.white};
     font-family: "sf_monoregular", monospace;
   }

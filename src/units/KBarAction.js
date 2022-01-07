@@ -22,7 +22,7 @@ const actions = [
     subtitle: "Portfolio's landing page",
     section: "Navigation",
     keywords: "landing page",
-    perform: () => scrollTo("#home"),
+    perform: () => navigate("/"),
   },
   {
     id: "work",

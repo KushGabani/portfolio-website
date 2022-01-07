@@ -36,7 +36,7 @@ const Container = styled.div`
   margin: 1rem 0.5rem 0.5rem 0.5rem;
   border-radius: 8px;
   background-color: ${colors.lightblack};
-  max-width: 16rem;
+  max-width: 20rem;
   padding: 1.5rem;
   transition: 0.1s margin ease-in;
   color: ${colors.white};
@@ -72,6 +72,10 @@ const Container = styled.div`
       li {
         color: ${colors.black};
       }
+    }
+
+    @media all and (max-width: 500px) {
+      max-width: 16rem;
     }
   }
 
@@ -147,6 +151,7 @@ const Stack = styled.ul`
 const StackItem = styled.li`
   font-size: 0.8rem;
   color: white;
+  letter-spacing: 0.03em;
   margin-right: 1rem;
 
   &:last-child {

@@ -69,7 +69,7 @@ const ResultItem = React.forwardRef(
             gap: "8px",
             alignItems: "center",
             fontSize: 14,
-            fontFamily: "Work Sans",
+            fontFamily: "worksans_regular",
           }}
         >
           {action.icon && action.icon}
@@ -84,7 +84,7 @@ const ResultItem = React.forwardRef(
               <span style={{ fontSize: 16 }}>{action.name}</span>
             </div>
             {action.subtitle && (
-              <span style={{ fontSize: 12 }}>{action.subtitle}</span>
+              <span style={{ fontSize: 12, paddingTop: "3px", opacity: "0.7" }}>{action.subtitle}</span>
             )}
           </div>
         </div>
@@ -114,7 +114,7 @@ const ResultItem = React.forwardRef(
   }
 );
 
-const background = colors.white;
+const background = "white";
 const foreground = colors.black;
 const a1 = "rgba(224,222,222,0.7)";
 const shadow = "5px 5px 20px 15px rgba(0, 0, 0, 0.5)";
