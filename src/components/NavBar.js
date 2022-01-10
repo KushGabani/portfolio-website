@@ -35,8 +35,7 @@ const NavWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1f1f1f;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  background: ${colors.black};
 
   @media only screen and (max-width: 768px)  {
     flex-direction: column;

@@ -6,12 +6,14 @@ import {
   KBarAnimator,
   KBarSearch,
   useMatches,
-  KBarResults,
+  KBarResults, KBarProvider,
 } from "kbar";
 import { colors } from "../Colors";
+import actions from "../units/KBarAction";
 
-const KBarCommandBar = () => {
+const KBarCommand = (props) => {
   return (
+    <KBarProvider actions={actions}>
     <KBarPortal>
       <KBarPositioner>
         <KBarAnimator style={animatorStyle}>
@@ -20,6 +22,8 @@ const KBarCommandBar = () => {
         </KBarAnimator>
       </KBarPositioner>
     </KBarPortal>
+      {props.children}
+    </KBarProvider>
   );
 };
 
@@ -149,7 +153,7 @@ const groupNameStyle = {
   opacity: 0.6,
 };
 
-export default KBarCommandBar;
+export default KBarCommand;
 
 // KBar Logo SVG
 

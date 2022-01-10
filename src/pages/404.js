@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import "./../404.scss";
 import actions from "../units/KBarAction";
-import KBarCommandBar from "../components/KBarCommandBar";
+import KBarCommand from "../components/KBarCommand";
 import { KBarProvider } from "kbar";
 
 const NotFoundPage = () => {
@@ -14,7 +14,7 @@ const NotFoundPage = () => {
   }
   return (
     <KBarProvider actions={actions}>
-      <KBarCommandBar />
+      <KBarCommand />
       <main className="container">
         {fours}
         {ones}

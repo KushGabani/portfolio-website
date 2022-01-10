@@ -8,17 +8,14 @@ import HeroSection from "../components/HeroSection";
 import Label from "../units/Label";
 import WorkCards from "../components/WorkCards";
 import Contact from "../components/Contact";
-import KBarCommandBar from "../components/KBarCommandBar";
+import KBarCommand from "../components/KBarCommand";
 import { Helmet } from "react-helmet";
-import { KBarProvider } from "kbar";
 import resume from "./../assets/resume.pdf";
-import actions from "../units/KBarAction";
 import About from "../components/About";
 
 const IndexPage = () => {
   return (
-    <KBarProvider actions={actions}>
-      <KBarCommandBar />
+    <KBarCommand>
       <Helmet title="KG | Home" />
       <GlobalStyle />
       <a href={resume} target="_blank" rel="noreferrer" id="resume" />
@@ -32,12 +29,12 @@ const IndexPage = () => {
       </WorkWrapper>
       <AboutWrapper id={"about"}>
         <Label text={"about"} />
-          <About />
+        <About />
       </AboutWrapper>
       <ContactWrapper id={"contact"}>
         <Contact text={"contact"} />
       </ContactWrapper>
-    </KBarProvider>
+    </KBarCommand>
   );
 };
 

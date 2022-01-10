@@ -6,10 +6,13 @@ import NavBar from "../components/NavBar";
 import ArchiveTable from "../components/ArchiveTable";
 import OpenSource from "../components/OpenSource";
 import { Helmet } from "react-helmet";
+import KBarCommand from "../components/KBarCommand";
+import resume from "../assets/resume.pdf";
 
 const Archive = () => (
-  <>
+  <KBarCommand>
     <Helmet title="KG | Archive" />
+    <a href={resume} target="_blank" rel="noreferrer" id="resume" />
     <GlobalStyle />
       <NavBar fromArchive={true} />
     <PageWrapper>
@@ -29,7 +32,7 @@ const Archive = () => (
         <OpenSource />
       </div>
     </PageWrapper>
-  </>
+  </KBarCommand>
 );
 
 const PageWrapper = styled.div`
