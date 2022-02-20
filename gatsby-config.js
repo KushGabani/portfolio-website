@@ -12,8 +12,6 @@ module.exports = {
     mail: "kushgabz2687@gmail.com",
     github: "https://github.com/KushGabani",
     linkedin: "https://www.linkedin.com/in/kush-gabani-910b521b0/",
-    instagram: "https:///www.instagram.com/kush.gab",
-    pinterest: "https://in.pinterest.com/kushgabz2687/",
   },
   plugins: [
     "gatsby-plugin-styled-components",
