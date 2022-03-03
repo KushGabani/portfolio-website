@@ -6,7 +6,7 @@ import { colors } from "../Colors";
 
 import "./../typography.css";
 import Socials from "../units/Socials";
-import { FaMapPin } from "react-icons/all";
+import { FaMapPin } from "react-icons/fa";
 
 const Contact = (props) => {
   return (
