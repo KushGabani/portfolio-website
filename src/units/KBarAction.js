@@ -93,7 +93,7 @@ const actions = [
         style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
       />
     ),
-    subtitle: "kushgabz2687@gmail.com",
+    subtitle: "gabani.p.kush@gmail.com",
     section: "Essentials",
     perform: () => {
       document.getElementById("resume").click();
@@ -108,10 +108,10 @@ const actions = [
         style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
       />
     ),
-    subtitle: "kushgabz2687@gmail.com",
+    subtitle: "gabani.p.kush@gmail.com",
     section: "Essentials",
     perform: () =>
-      window !== undefined ? window.open("mailto:kushgabz2687@gmail.com") : "",
+      window !== undefined ? window.open("mailto:gabani.p.kush@gmail.com") : "",
   },
 
   {

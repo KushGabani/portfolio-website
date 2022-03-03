@@ -9,7 +9,7 @@ module.exports = {
                   is ML/DL and MERN stack. I aspire to create
                   solutions for real-world problems using web technologies and deep learning models.`,
     tag: "making difference, one app at a time",
-    mail: "kushgabz2687@gmail.com",
+    mail: "gabani.p.kush@gmail.com",
     github: "https://github.com/KushGabani",
     linkedin: "https://www.linkedin.com/in/kush-gabani-910b521b0/",
   },

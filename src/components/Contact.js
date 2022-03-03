@@ -32,14 +32,14 @@ const Contact = (props) => {
             Get in <span style={{ color: `${colors.orange}` }}>touch</span>
           </LabelText>
           <Subtitle>GOT A PROJECT? TELL ME EVERYTHING</Subtitle>
-          <a href={"mailto:kushgabz2687@gmail.com"} target={"_blank"} style={{textDecoration: "none"}} rel={"noreferrer"}>
+          <a href={"mailto:gabani.p.kush@gmail.com"} target={"_blank"} style={{textDecoration: "none"}} rel={"noreferrer"}>
             <ReachButton>REACH ME!</ReachButton>
           </a>
 
           <ContactInfo className={"contact"}>
             <span>+91 8140244500</span>
             <hr />
-            <span>kushgabz2687@gmail.com</span>
+            <span>gabani.p.kush@gmail.com</span>
           </ContactInfo>
         </LabelWrapper>
         <div style={{ marginBottom: "0.7rem" }}>
