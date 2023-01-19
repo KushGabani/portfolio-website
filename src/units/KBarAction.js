@@ -5,7 +5,6 @@ import {
   FaAtom,
   FaComments,
   FaPaperPlane,
-  FaPhone,
   FaRobot,
   FaUserAstronaut,
 } from "react-icons/fa";
@@ -112,19 +111,6 @@ const actions = [
     section: "Essentials",
     perform: () =>
       window !== undefined ? window.open("mailto:gabani.p.kush@gmail.com") : "",
-  },
-
-  {
-    id: "phone",
-    name: "Phone",
-    icon: (
-      <FaPhone
-        size={"16px"}
-        style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
-      />
-    ),
-    subtitle: "+91 814024500",
-    section: "Essentials",
   },
   {
     id: "theme",
