@@ -4,7 +4,7 @@ import { colors } from "../Colors";
 import GlobalStyle from "../GlobalStyle";
 import NavBar from "../components/NavBar";
 import ArchiveTable from "../components/ArchiveTable";
-import OpenSource from "../components/OpenSource";
+// import OpenSource from "../components/OpenSource";
 import { Helmet } from "react-helmet";
 import KBarCommand from "../components/KBarCommand";
 import resume from "../assets/resume.pdf";
@@ -25,11 +25,11 @@ const Archive = () => (
         </ArchiveContainer>
         <ArchiveTable />
 
-        <ArchiveContainer>
+        {/* <ArchiveContainer>
           <p className={"heading"}>Open Source Contributions</p>
           <p className={"subheading"}>significant open source contributions</p>
-        </ArchiveContainer>
-        <OpenSource />
+        </ArchiveContainer> */}
+        {/* <OpenSource /> */}
       </div>
     </PageWrapper>
   </KBarCommand>

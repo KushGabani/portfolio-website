@@ -41,7 +41,7 @@ const HeroSection = () => {
             Press <strong>Ctrl + K</strong> to learn more.
           </p>
         </Desc>
-        <Outline>
+        {/* <Outline>
           <a
             href={resume}
             target="_blank"
@@ -50,7 +50,7 @@ const HeroSection = () => {
           >
             <ResumeButton>.resume()</ResumeButton>
           </a>
-        </Outline>
+        </Outline> */}
       </Left>
       <Right>
         <StaticImage
@@ -99,7 +99,7 @@ const Left = styled.div`
   &:after {
     content: "</brief>";
     position: absolute;
-    bottom: -7rem;
+    bottom: -3rem;
     left: -4rem;
     font-size: 3rem;
     opacity: 0.15;

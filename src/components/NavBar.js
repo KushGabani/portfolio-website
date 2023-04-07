@@ -16,9 +16,9 @@ const NavBar = ({ fromArchive }) => (
       <MenuItem onClick={() => fromArchive ? navigate("/") : scrollTo("#work")}>
         .work<Accent>()</Accent>
       </MenuItem>
-      <MenuItem onClick={() => fromArchive ? navigate("/") :  scrollTo("#about")}>
+      {/* <MenuItem onClick={() => fromArchive ? navigate("/") :  scrollTo("#about")}>
         .about<Accent>()</Accent>
-      </MenuItem>
+      </MenuItem> */}
       <MenuItem onClick={() => fromArchive ? navigate("/") :  scrollTo("#contact")}>
         .contact<Accent>()</Accent>
       </MenuItem>

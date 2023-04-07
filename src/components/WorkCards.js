@@ -8,10 +8,11 @@ import { graphql, useStaticQuery } from "gatsby";
 const WorkCards = () => {
   const projects = useStaticQuery(graphql`
     query MyQuery {
-      allContentfulWork(sort: { fields: createdAt, order: ASC }) {
+      allContentfulWork(sort: { fields: index, order: ASC }) {
         edges {
           node {
             id
+            index
             title
             subtitle
             github

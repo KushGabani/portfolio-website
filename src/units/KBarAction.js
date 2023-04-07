@@ -53,21 +53,21 @@ const actions = [
     keywords: "Project Archive",
     perform: () => navigate("/archive"),
   },
-  {
-    id: "about",
-    name: "About",
-    shortcut: ["a"],
-    icon: (
-      <FaUserAstronaut
-        size={"16px"}
-        style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
-      />
-    ),
-    subtitle: "More about me",
-    section: "Navigation",
-    keywords: "About Me",
-    perform: () => scrollTo("#about"),
-  },
+  // {
+  //   id: "about",
+  //   name: "About",
+  //   shortcut: ["a"],
+  //   icon: (
+  //     <FaUserAstronaut
+  //       size={"16px"}
+  //       style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
+  //     />
+  //   ),
+  //   subtitle: "More about me",
+  //   section: "Navigation",
+  //   keywords: "About Me",
+  //   perform: () => scrollTo("#about"),
+  // },
   {
     id: "contact",
     name: "Contact",
@@ -83,21 +83,21 @@ const actions = [
     keywords: "Contact Information",
     perform: () => scrollTo("#contact"),
   },
-  {
-    id: "resume",
-    name: "Resume",
-    icon: (
-      <FaAtom
-        size={"16px"}
-        style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
-      />
-    ),
-    subtitle: "gabani.p.kush@gmail.com",
-    section: "Essentials",
-    perform: () => {
-      document.getElementById("resume").click();
-    },
-  },
+  // {
+  //   id: "resume",
+  //   name: "Resume",
+  //   icon: (
+  //     <FaAtom
+  //       size={"16px"}
+  //       style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
+  //     />
+  //   ),
+  //   subtitle: "kushgabz2687@gmail.com",
+  //   section: "Essentials",
+  //   perform: () => {
+  //     document.getElementById("resume").click();
+  //   },
+  // },
   {
     id: "email",
     name: "Email",
@@ -107,10 +107,10 @@ const actions = [
         style={{ color: colors.black, marginLeft: "4px", marginRight: "3px" }}
       />
     ),
-    subtitle: "gabani.p.kush@gmail.com",
+    subtitle: "kushgabz2687@gmail.com",
     section: "Essentials",
     perform: () =>
-      window !== undefined ? window.open("mailto:gabani.p.kush@gmail.com") : "",
+      window !== undefined ? window.open("mailto:kushgabz2687@gmail.com") : "",
   },
   {
     id: "theme",

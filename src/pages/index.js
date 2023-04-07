@@ -27,10 +27,10 @@ const IndexPage = () => {
         <Label text={"work"} />
         <WorkCards />
       </WorkWrapper>
-      <AboutWrapper id={"about"}>
+      {/* <AboutWrapper id={"about"}>
         <Label text={"about"} />
         <About />
-      </AboutWrapper>
+      </AboutWrapper> */}
       <ContactWrapper id={"contact"}>
         <Contact text={"contact"} />
       </ContactWrapper>

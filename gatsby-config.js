@@ -9,7 +9,7 @@ module.exports = {
                   products for Web and Mobile that inspire people and solve seemingly difficult
                   problems with ease.`,
     tag: "making difference, one application a time",
-    mail: "gabani.p.kush@gmail.com",
+    mail: "kushgabz2687@gmail.com",
     github: "https://github.com/KushGabani",
     linkedin: "https://www.linkedin.com/in/kushgabani/",
   },
