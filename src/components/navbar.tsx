@@ -3,7 +3,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   const tabs = ["Home", "About", "Work", "Contact"].map((e) => (
-    <div className="hover:bg-gray-100 cursor-pointer rounded-lg px-3 py-[0.35rem]">
+    <div
+      key={`nav_${e}]`}
+      className="hover:bg-gray-100 cursor-pointer rounded-lg px-3 py-[0.35rem]"
+    >
       {e}
     </div>
   ));

@@ -112,7 +112,7 @@ export default async function Home() {
         </section>
         <section className="mx-auto flex flex-col items-center gap-y-4 w-full max-w-6xl px-0 lg:px-8 xl:p-0">
           <div className="px-4 py-2 text-sm rounded-full text-white bg-[#171717] w-fit">
-            TECH I'M FLUENT IN
+            {"TECH I'M FLUENT IN"}
           </div>
           <div className="w-full overflow-hidden border bg-gray-100 border-l-0 border-r-0 border-neutral-200/50 shadow-sm lg:rounded-2xl lg:border-l lg:border-r">
             <div className="grid grid-cols-2 cursor-pointer gap-px md:grid-cols-4">

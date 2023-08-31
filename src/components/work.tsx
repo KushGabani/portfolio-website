@@ -11,12 +11,18 @@ const Work = async () => {
       <div className="flex-grow">
         {work.map((item) => {
           return (
-            <div className="group p-4 first:pt-3 border-b text-lg last:border-b-0">
+            <div
+              key={item.github}
+              className="group p-4 first:pt-3 border-b text-lg last:border-b-0"
+            >
               <a href={item.github} target="_blank" className="">
                 <div className="transition-transform sm:group-hover:translate-x-8 space-y-2">
                   <div>
-                    {item.stack.map((tech) => (
-                      <span className="text-xs text-gray-400 uppercase mx-3 first:ml-0 last:mr-0">
+                    {item.stack.map((tech, i) => (
+                      <span
+                        key={`${i}_${tech}`}
+                        className="text-xs text-gray-400 uppercase mx-3 first:ml-0 last:mr-0"
+                      >
                         {tech}
                       </span>
                     ))}
