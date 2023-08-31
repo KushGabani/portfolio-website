@@ -1,45 +1,28 @@
 {
   "name": "portfolio-website",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "Portfolio-Website",
-  "author": "KushGabani",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public",
-    "format": "prettier --write \"src/**/*.js\""
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.13.3",
-    "dotenv": "^10.0.0",
-    "gatsby": "^4.0.0",
-    "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-image": "^2.0.0",
-    "gatsby-plugin-react-helmet": "^5.0.0",
-    "gatsby-plugin-sass": "^5.4.0",
-    "gatsby-plugin-scroll-indicator": "^1.0.1",
-    "gatsby-plugin-sharp": "^4.0.0",
-    "gatsby-plugin-smoothscroll": "^1.2.0",
-    "gatsby-plugin-styled-components": "^5.0.0",
-    "gatsby-source-contentful": "^6.1.0",
-    "gatsby-source-filesystem": "^4.0.0",
-    "gatsby-transformer-sharp": "^4.0.0",
-    "kbar": "^0.1.0-beta.24",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.3.1",
-    "sass": "^1.46.0",
-    "styled-components": "^5.3.3"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "prettier": "^2.4.1"
+    "@calcom/embed-react": "^1.3.0",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "contentful": "^10.5.1",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "postcss": "8.4.28",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2"
   }
 }

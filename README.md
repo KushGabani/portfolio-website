@@ -1,54 +1,34 @@
-<h1 align="center">
-  Portfolio Website
-</h1>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 📢 Prerequisites
-- Install [Git](https://git-scm.com/downloads)
-- Install [Node](https://node.js/download)
-- Install [Gatsby](https://www.gatsbyjs.com/docs/quick-start/)
+## Getting Started
 
-## 🚀 Set up the project on your local machine
+First, run the development server:
 
-1. **Clone the repository**
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-    ```shell
-    git clone https://github.com/KushGabani/portfolio-website
-    ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-2. **Change the current working directory.**
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-    ```shell
-    cd portfolio-website/
-    ```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-3. **Install the dependencies!**
-    ```shell
-    npm install
-    ```
-4. **Start the Local Server for Development**
-    ```shell
-    npm run start
-    ```
+## Learn More
 
-## Learn more
-- [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+To learn more about Next.js, take a look at the following resources:
 
-- [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-- [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Deploy on Vercel
 
-- [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-
-## List of contributors
-- [Kush Gabani (Author)](https://github.com/KushGabani/)
-
-## 🚀 Deploy at Gatsby Cloud
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
