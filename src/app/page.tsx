@@ -19,7 +19,7 @@ export default async function Home() {
         <section className="dashed-grid h-[95vh]">
           <div className="mx-auto w-full h-full flex flex-col justify-center max-w-6xl py-8 px-4 xl:px-0 space-y-6 sm:space-y-12">
             <div className="w-fit">
-              <a href="https://alter.typedream.app" target="_blank">
+              <a href="https://alter-textile.com" target="_blank">
                 <div className="flex items-center text-xs gap-x-3 rounded-full bg-white border hover:shadow-md transition-shadow border-neutral-200 p-3 shadow-sm w-fit text-gray-600">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
