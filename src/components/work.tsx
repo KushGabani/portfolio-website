@@ -1,13 +1,21 @@
 import { useGetWork } from "@/utils/contentful";
+import Link from "next/link";
 
 const Work = async () => {
   const work = await useGetWork();
 
   return (
     <>
-      <h1 className="text-[2.5rem] font-bold tracking-tight text-[#171717]">
-        Archive of work.
-      </h1>
+      <div className="gap-y-2">
+        <h1 className="text-[2.5rem] font-bold tracking-tight text-[#171717]">
+          Archive of work.
+        </h1>
+        <Link target="_blank" href="https://github.com/kushgabani">
+          <span className="text-gray-400 underline hover:text-gray-500">
+            View All Archives
+          </span>
+        </Link>
+      </div>
       <div className="flex-grow">
         {work.map((item) => {
           return (

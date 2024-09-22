@@ -2,7 +2,7 @@ import CalcomButton from "@/components/calcom_button";
 import Link from "next/link";
 
 const Navbar = () => {
-  const tabs = ["Home", "About", "Work", "Contact"].map((e) => (
+  const tabs = ["Home", "Work"].map((e) => (
     <div
       key={`nav_${e}]`}
       className="hover:bg-gray-100 cursor-pointer rounded-lg px-3 py-[0.35rem]"
@@ -20,12 +20,17 @@ const Navbar = () => {
           </span>
         </Link>
         <div className="md:flex hidden sm:items-center sm:justify-center gap-x-4 text-sm font-medium tracking-tight">
-          {tabs}
+          {/* {tabs} */}
         </div>
         <div className="w-fit flex items-center gap-x-4 justify-self-end">
-          <button className="px-4 py-[0.35rem] text-[0.8rem] font-medium bg-white hover:bg-[#f9f9f9] border hover:border-gray-300 focus:outline-dashed shadow-sm rounded-lg">
-            See Resume
-          </button>
+          <Link
+            target="_blank"
+            href="https://drive.google.com/file/d/1xi3qqY8EwRvek9SItQ3_68Wt_RpZOosg/view?usp=sharing"
+          >
+            <button className="px-4 py-[0.35rem] text-[0.8rem] font-medium bg-white hover:bg-[#f9f9f9] border hover:border-gray-300 focus:outline-dashed shadow-sm rounded-lg">
+              See Resume
+            </button>
+          </Link>
           <CalcomButton className="py-[0.35rem] px-4 !text-[0.8rem] rounded-lg" />
         </div>
       </div>
