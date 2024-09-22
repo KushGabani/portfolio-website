@@ -21,7 +21,7 @@ const MarqueeContainer = () => {
         "node.js",
         "flutter",
       ].map((e) => (
-        <div className="flex items-center">
+        <div key={e} className="flex items-center">
           <h3 className="mx-6 uppercase">{e}</h3>
           <Image
             src={"/seperator.svg"}
